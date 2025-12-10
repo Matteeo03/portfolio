@@ -1,102 +1,118 @@
 class ProjectUtils {
-  final String image;
-  final String title;
-  final String subtitle;
-  final String? androidLink;
-  final String? iosLink;
-  final String? webLink;
+  final String id;              // unikalny identyfikator projektu
+  final String image;           // ścieżka do obrazu
+  final String title;           // nazwa projektu
+  final String subtitle;        // krótki opis
+  final String? description;    // dłuższy opis (opcjonalny)
+  final String? androidLink;    // link do Google Play
+  final String? iosLink;        // link do App Store
+  final String? webLink;        // link do wersji web
 
-  ProjectUtils({
+  const ProjectUtils({
+    required this.id,
     required this.image,
     required this.title,
     required this.subtitle,
+    this.description,
     this.androidLink,
     this.iosLink,
     this.webLink,
   });
 }
 
-// ###############
+// #########################################################
 // HOBBY PROJECTS
-List<ProjectUtils> hobbyProjectUtils = [
-  ProjectUtils(
+// #########################################################
+
+final List<ProjectUtils> hobbyProjectUtils = [
+  const ProjectUtils(
+    id: 'h1',
     image: 'assets/projects/1.png',
     title: 'English Learning App',
     subtitle:
-        'This is a comprehensive English learning app for practicing and competing with each other.',
+        'A comprehensive English learning app for practicing and competing with each other.',
     androidLink:
         'https://play.google.com/store/apps/details?id=com.shohatech.eduza',
   ),
-  ProjectUtils(
-    image: 'assets/projects/02.png',
+  const ProjectUtils(
+    id: 'h2',
+    image: 'assets/projects/02.png', // upewnij się, że plik istnieje
     title: 'English Dictionary App',
     subtitle:
-        'This is a dictionary application for English learners to easily look up word definitions.',
+        'A dictionary application for English learners to easily look up word definitions.',
     androidLink:
         'https://play.google.com/store/apps/details?id=com.shohatech.eduza_eng_dictionary',
     iosLink:
         "https://apps.apple.com/us/app/eduza-english-dictionary/id6443770339",
   ),
-  ProjectUtils(
-      image: 'assets/projects/03.png',
-      title: 'Pocket Dictionary',
-      subtitle:
-          'This is a word memorising app to save and play your own words as quizes',
-      androidLink:
-          'https://play.google.com/store/apps/details?id=com.shohruhak.eng_pocket_dictionary',
-      iosLink:
-          'https://apps.apple.com/tr/app/pocket-dictionary-1/id6447465115'),
-  ProjectUtils(
+  const ProjectUtils(
+    id: 'h3',
+    image: 'assets/projects/03.png',
+    title: 'Pocket Dictionary',
+    subtitle:
+        'A word memorising app to save and play your own words as quizzes.',
+    androidLink:
+        'https://play.google.com/store/apps/details?id=com.shohruhak.eng_pocket_dictionary',
+    iosLink:
+        'https://apps.apple.com/tr/app/pocket-dictionary-1/id6447465115',
+  ),
+  const ProjectUtils(
+    id: 'h4',
     image: 'assets/projects/04.png',
     title: 'Tasbeeh Counter',
-    subtitle:
-        'This is a simple dzikr counter app for muslims with persistent storage',
+    subtitle: 'A simple dzikr counter app with persistent storage.',
     androidLink:
         'https://play.google.com/store/apps/details?id=com.shohatech.tasbeeh',
   ),
-  ProjectUtils(
+  const ProjectUtils(
+    id: 'h5',
     image: 'assets/projects/05.png',
     title: 'Todo App',
-    subtitle: 'This is a simple task management app with persistent storage',
+    subtitle: 'A simple task management app with persistent storage.',
     androidLink:
         'https://play.google.com/store/apps/details?id=com.shohatech.todo',
     iosLink: "https://apps.apple.com/us/app/eduza-todo/id6443970333",
   ),
-  ProjectUtils(
+  const ProjectUtils(
+    id: 'h6',
     image: 'assets/projects/06.png',
     title: 'NotePad App',
-    subtitle: 'This is a note taking app for MacOS and Android',
+    subtitle: 'A note-taking app for macOS and Android.',
     androidLink:
         'https://play.google.com/store/apps/details?id=com.shohatech.notepad',
     iosLink: 'https://apps.apple.com/us/app/eduza-notepad/id6443973859',
   ),
 ];
 
-// ###############
+// #########################################################
 // WORK PROJECTS
-List<ProjectUtils> workProjectUtils = [
-  ProjectUtils(
+// #########################################################
+
+final List<ProjectUtils> workProjectUtils = [
+  const ProjectUtils(
+    id: 'w1',
     image: 'assets/projects/w01.png',
     title: 'English Brain Craft',
     subtitle:
-        'This is an English learning app for students to learn English through various methods.',
+        'English learning app for students using various learning methods.',
     androidLink:
         'https://play.google.com/store/apps/details?id=kr.co.evolcano.donotstudy',
     iosLink:
         "https://apps.apple.com/kr/app/%EC%98%81%EC%96%B4%EB%A8%B8%EB%A6%AC-%EA%B3%B5%EC%9E%91%EC%86%8C/id1507102714",
   ),
-  ProjectUtils(
+  const ProjectUtils(
+    id: 'w2',
     image: 'assets/projects/w02.png',
     title: 'Online Shop Web App',
-    subtitle:
-        'This is a responsive online shop web application for car engine oil.',
+    subtitle: 'Responsive online shop web app for car engine oil.',
     webLink: 'https://www.elo.best',
   ),
-  ProjectUtils(
+  const ProjectUtils(
+    id: 'w3',
     image: 'assets/projects/w03.jpeg',
     title: 'Advertisement Management System',
     subtitle:
-        'This is an Advertisement Management System to buy, sell, and manage advertisement.',
-    webLink: 'https://www.externally.unavailable.project',
+        'System to buy, sell, and manage advertisement. Internal project.',
+    webLink: null, // brak działającego linku
   ),
 ];

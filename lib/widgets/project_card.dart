@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:my_portfolio/utils/project_utils.dart';
 import '../constants/colors.dart';
+import 'package:my_portfolio/pages/project_detail_page.dart'; // dodaj import na górze
 
 class ProjectCardWidget extends StatelessWidget {
   const ProjectCardWidget({
@@ -71,8 +72,12 @@ class ProjectCardWidget extends StatelessWidget {
                     alignment: Alignment.bottomRight,
                     child: InkWell(
                       onTap: () {
-                        // TODO: Otworzyć stronę projektu
-                        // np. Navigator.push(context, ...)
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => ProjectDetailPage(project: project),
+                          ),
+                        );
                       },
                       child: Container(
                         padding: const EdgeInsets.symmetric(
