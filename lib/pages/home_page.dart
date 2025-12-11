@@ -104,20 +104,21 @@ class _HomePageState extends State<HomePage> {
             ),
 
             // STICKY HEADER NA GÓRZE
-            Positioned(
-              top: 0,
-              left: 0,
-              right: 0,
-              child: constraints.maxWidth >= kMinDesktopWidth
-                  ? HeaderDesktop(onNavMenuTap: (int navIndex) {
-                      scrollToSection(navIndex);
-                    })
-                  : HeaderMobile(
-                      onMenuTap: () {
-                        scaffoldKey.currentState?.openEndDrawer();
-                      },
-                    ),
-            ),
+            if (constraints.maxWidth >= kMinDesktopWidth)
+              Positioned(
+                top: 0,
+                left: 0,
+                right: 0,
+                child: HeaderDesktop(onNavMenuTap: (int navIndex) {
+                  scrollToSection(navIndex);
+                }),
+              )
+            else
+              HeaderMobile(
+                onMenuTap: () {
+                  scaffoldKey.currentState?.openEndDrawer();
+                },
+              ),
           ],
         ),
       );

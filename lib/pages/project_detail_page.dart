@@ -26,7 +26,7 @@ class _ProjectDetailPageState extends State<ProjectDetailPage> {
     // screen width to compute slider size responsively
     final screenWidth = MediaQuery.of(context).size.width;
     // maksymalna szerokość slidera (użytkownik chciał 800)
-    const maxSliderWidth = 920.0;
+    const maxSliderWidth = 860.0;
     // obliczamy szerokość: na małych ekranach użyj 95% szerokości, na większych ogranicz do maxSliderWidth
     final sliderWidth = min(screenWidth * 0.95, maxSliderWidth);
     // wysokość wynikająca z proporcji 4:3 (szer.:wys.)
@@ -71,18 +71,11 @@ class _ProjectDetailPageState extends State<ProjectDetailPage> {
                       spacing: 12,
                       runSpacing: 8,
                       children: widget.project.technologies.map((tech) {
-                        return Container(
-                          padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 6),
-                          decoration: BoxDecoration(
-                            color: CustomColor.bgLight2,
-                            borderRadius: BorderRadius.circular(20),
-                          ),
-                          child: Text(
-                            tech,
-                            style: const TextStyle(
-                              color: CustomColor.whiteSecondary,
-                              fontSize: 14,
-                            ),
+                        return Text(
+                          tech,
+                          style: const TextStyle(
+                            color: CustomColor.whiteSecondary,
+                            fontSize: 14,
                           ),
                         );
                       }).toList(),
@@ -215,7 +208,7 @@ class _ProjectDetailPageState extends State<ProjectDetailPage> {
             Icon(Icons.arrow_back, color: Colors.white, size: 18),
             SizedBox(width: 6),
             Text(
-              "Wróć",
+              "Powrót",
               style: TextStyle(
                 color: Colors.white,
                 fontSize: 14,

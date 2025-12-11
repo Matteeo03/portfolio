@@ -11,41 +11,33 @@ class HeaderMobile extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      height: 50.0,
-
-      // Tło + cień dla lepszej widoczności
-      decoration: BoxDecoration(
-        color: CustomColor.scaffoldBg,
-        boxShadow: [
-          BoxShadow(
-            color: Colors.black.withOpacity(0.1),
-            blurRadius: 10,
-            offset: const Offset(0, 2),
-          ),
-        ],
-      ),
-
-      padding: const EdgeInsets.symmetric(
-        vertical: 10.0,
-        horizontal: 20.0,
-      ),
-
-      child: Row(
-        children: [
-          // Pusta przestrzeń po lewej
-          const Spacer(),
-
-          // PRZYCISK MENU (hamburger) po prawej stronie
-          IconButton(
-            onPressed: onMenuTap,
-            icon: const Icon(
+    return Positioned(
+      top: 20,
+      right: 20,
+      child: Material(
+        elevation: 8,
+        borderRadius: BorderRadius.circular(12),
+        color: CustomColor.bgLight2,
+        child: InkWell(
+          onTap: onMenuTap,
+          borderRadius: BorderRadius.circular(12),
+          child: Container(
+            width: 50,
+            height: 50,
+            decoration: BoxDecoration(
+              borderRadius: BorderRadius.circular(12),
+              border: Border.all(
+                color: CustomColor.whitePrimary,
+                width: 1,
+              ),
+            ),
+            child: const Icon(
               Icons.menu,
               color: CustomColor.whitePrimary,
               size: 28,
             ),
           ),
-        ],
+        ),
       ),
     );
   }

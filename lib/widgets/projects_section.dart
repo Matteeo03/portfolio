@@ -10,7 +10,7 @@ class ProjectsSection extends StatelessWidget {
   // --- Przyciski w stylu kafelków ---
   Widget _backToTopButton(BuildContext context) {
     return Container(
-      width: 200,
+      width: 140,
       decoration: BoxDecoration(
         color: CustomColor.bgLight2,
         borderRadius: BorderRadius.circular(5),
@@ -37,7 +37,7 @@ class ProjectsSection extends StatelessWidget {
               Icon(Icons.arrow_upward, color: Colors.white, size: 20),
               SizedBox(width: 12),
               Text(
-                "Przewiń do góry",
+                "Powrót",
                 style: TextStyle(
                   color: Colors.white,
                   fontSize: 16,
@@ -85,10 +85,6 @@ class ProjectsSection extends StatelessWidget {
               ],
             ),
           ),
-
-          const SizedBox(height: 40),
-          Center(child: _backToTopButton(context)),
-
 
           const SizedBox(height: 80),
 

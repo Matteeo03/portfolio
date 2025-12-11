@@ -12,7 +12,8 @@ class Footer extends StatelessWidget {
       width: double.maxFinite,
       alignment: Alignment.center,
       child: const Text(
-        "Made by Lucynka (based on Shohruh AK work) with Flutter 3.38.4 // To tylko test",
+          "Made by Lucynka (based on Shohruh AK work) with Flutter 3.38.4 \n" +
+          "Copyright © 2024 Imię, Built with Flutter",
         style: TextStyle(
           fontWeight: FontWeight.w400,
           color: CustomColor.whiteSecondary,
