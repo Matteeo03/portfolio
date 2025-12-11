@@ -14,20 +14,29 @@ class HeaderMobile extends StatelessWidget {
     return Container(
       height: 50.0,
 
-      // ZERO dekoracji — jak w desktop
-      decoration: const BoxDecoration(),
+      // Tło + cień dla lepszej widoczności
+      decoration: BoxDecoration(
+        color: CustomColor.scaffoldBg,
+        boxShadow: [
+          BoxShadow(
+            color: Colors.black.withOpacity(0.1),
+            blurRadius: 10,
+            offset: const Offset(0, 2),
+          ),
+        ],
+      ),
 
-      margin: const EdgeInsets.symmetric(
+      padding: const EdgeInsets.symmetric(
         vertical: 10.0,
         horizontal: 20.0,
       ),
 
       child: Row(
         children: [
-          // placeholder po lewej, aby menu nie przylegało do lewej krawędzi
-          const SizedBox(width: 10),
+          // Pusta przestrzeń po lewej
+          const Spacer(),
 
-          // PRZYCISK MENU (hamburger)
+          // PRZYCISK MENU (hamburger) po prawej stronie
           IconButton(
             onPressed: onMenuTap,
             icon: const Icon(
@@ -36,9 +45,6 @@ class HeaderMobile extends StatelessWidget {
               size: 28,
             ),
           ),
-
-          // Reszta przestrzeni — pusty obszar
-          const Spacer(),
         ],
       ),
     );

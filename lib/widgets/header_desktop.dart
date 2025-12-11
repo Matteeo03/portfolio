@@ -1,9 +1,6 @@
 import 'package:flutter/material.dart';
-// import 'package:my_portfolio/widgets/site_logo.dart';
-
 import '../constants/colors.dart';
 import '../constants/nav_items.dart';
-// import '../styles/style.dart';
 
 class HeaderDesktop extends StatelessWidget {
   const HeaderDesktop({
@@ -16,20 +13,27 @@ class HeaderDesktop extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       height: 60.0,
+      
+      // Tło + cień dla lepszej widoczności
+      decoration: BoxDecoration(
+        color: CustomColor.scaffoldBg,
+        boxShadow: [
+          BoxShadow(
+            color: Colors.black.withOpacity(0.1),
+            blurRadius: 10,
+            offset: const Offset(0, 2),
+          ),
+        ],
+      ),
 
-      // ZERO dekoracji:
-      decoration: const BoxDecoration(),
-
-      margin: const EdgeInsets.symmetric(
+      padding: const EdgeInsets.symmetric(
         vertical: 10.0,
         horizontal: 20.0,
       ),
-      // width: double.maxFinite,
-      // decoration: kHederDecoration,
+      
       child: Row(
-        mainAxisAlignment: MainAxisAlignment.center, // ← Tutaj zmiana
+        mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          // Usuń Spacer()
           for (int i = 0; i < navTitles.length; i++)
             Padding(
               padding: const EdgeInsets.symmetric(horizontal: 30),
