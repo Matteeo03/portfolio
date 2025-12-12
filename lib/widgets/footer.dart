@@ -52,7 +52,7 @@ class Footer extends StatelessWidget {
           const SizedBox(height: 16),
 
           // ---- INFO TEXT ----
-          Text(
+          const Text(
             "Made by Lucynka — based on a template by Shohruh AK\n"
             "Significantly modified and rebuilt with Flutter 3.38.4\n"
             "© 2024 Lucynka. All rights reserved.",
