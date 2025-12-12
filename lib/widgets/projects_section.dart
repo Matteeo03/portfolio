@@ -63,7 +63,7 @@ class ProjectsSection extends StatelessWidget {
           const Text(
             "Moje projekty",
             style: TextStyle(
-              fontSize: 24,
+              fontSize: 26,
               fontWeight: FontWeight.bold,
               color: CustomColor.whitePrimary,
             ),
@@ -92,7 +92,7 @@ class ProjectsSection extends StatelessWidget {
           const Text(
             "Projekty, w których brałem udział",
             style: TextStyle(
-              fontSize: 24,
+              fontSize: 26,
               fontWeight: FontWeight.bold,
               color: CustomColor.whitePrimary,
             ),

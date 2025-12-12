@@ -45,7 +45,7 @@ class ProjectCardWidget extends StatelessWidget {
                   Text(
                     project.title,
                     style: const TextStyle(
-                      fontSize: 18,
+                      fontSize: 19,
                       fontWeight: FontWeight.bold,
                       color: CustomColor.whitePrimary,
                     ),
@@ -58,7 +58,7 @@ class ProjectCardWidget extends StatelessWidget {
                     child: Text(
                       project.subtitle,
                       style: const TextStyle(
-                        fontSize: 13,
+                        fontSize: 15,
                         height: 1.4,
                         color: CustomColor.whiteSecondary,
                       ),
@@ -92,7 +92,7 @@ class ProjectCardWidget extends StatelessWidget {
                           "Zobacz szczegóły",
                           style: TextStyle(
                             color: Colors.white,
-                            fontSize: 13,
+                            fontSize: 14,
                             fontWeight: FontWeight.w500,
                           ),
                         ),

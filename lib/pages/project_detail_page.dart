@@ -161,7 +161,7 @@ class _ProjectDetailPageState extends State<ProjectDetailPage> {
                                 '${_currentPage + 1} / ${widget.project.images.length}',
                                 style: const TextStyle(
                                   color: CustomColor.whiteSecondary,
-                                  fontSize: 16,
+                                  fontSize: 20,
                                 ),
                               ),
                               IconButton(
@@ -190,7 +190,7 @@ class _ProjectDetailPageState extends State<ProjectDetailPage> {
                     child: Text(
                       widget.project.description ?? widget.project.subtitle,
                       style: const TextStyle(
-                        fontSize: 16,
+                        fontSize: 18,
                         height: 1.5,
                         color: CustomColor.whiteSecondary,
                       ),
