@@ -1,61 +1,195 @@
-const List<Map> platformItems = [
+// skill_items.dart - plik z danymi
+
+/// Struktura danych dla kategorii umiejętności
+/// Podobna do tuple w Pythonie: (category, [skills])
+const List<Map<String, dynamic>> skillCategories = [
   {
-    "img": "assets/android_icon.png",
-    "title": "Android Dev",
+    "category": "Software Development",
+    "skills": [
+      "C",
+      "C++",
+      "Python",
+      "MATLAB",
+      "LabVIEW",
+      "bash",
+      "VHDL",
+    ],
   },
   {
-    "img": "assets/web_icon.png",
-    "title": "Web Dev",
+    "category": "Microcontrollers & Embedded Systems",
+    "skills": [
+      "STM32 (HAL/CubeMX)",
+      "AVR",
+      "ESP32",
+      "FreeRTOS basics",
+    ],
   },
   {
-    "img": "assets/ios_icon.png",
-    "title": "IOS Dev",
+    "category": "Development Tools & IDE",
+    "skills": [
+      "STM32CubeIDE",
+      "Keil µVision",
+      "Visual Studio Code",
+      "Git",
+    ],
   },
   {
-    "img": "assets/desktop_icon.png",
-    "title": "Desktop Dev",
+    "category": "Communication Protocols & Interfaces",
+    "skills": [
+      "CAN",
+      "SPI",
+      "I2C",
+      "UART",
+      "Ethernet",
+      "BLE",
+      "WiFi",
+      "NFC",
+      "GNSS",
+      "GPRS/LTE",
+    ],
   },
   {
-    "img": "assets/desktop_icon.png",
-    "title": "To tylko test",
-  }
+    "category": "Single-Board Computers",
+    "skills": [
+      "Raspberry Pi",
+    ],
+  },
+  {
+    "category": "PCB Design & Circuit Simulation",
+    "skills": [
+      "Altium Designer",
+      "CircuitStudio",
+      "PADS",
+      "LTspice",
+    ],
+  },
+  {
+    "category": "Prototyping & Assembly",
+    "skills": [
+      "PCB assembly",
+      "SMD/THT soldering",
+      "3D printing",
+    ],
+  },
+  {
+    "category": "Test & Measurement Equipment",
+    "skills": [
+      "Oscilloscope",
+      "Multimeter",
+      "Power supplies",
+      "Logic analyzers",
+      "Frequency counters",
+      "Debuggers: ST-Link/SWD",
+    ],
+  },
+  {
+    "category": "Documentation & Graphics",
+    "skills": [
+      "LaTeX",
+      "Inkscape",
+      "GIMP",
+      "Microsoft Office",
+    ],
+  },
 ];
 
-const List<Map> skillItems = [
+// ============================================
+// ALTERNATYWNA STRUKTURA - z ikonami emoji (opcjonalnie)
+// ============================================
+
+/// Jeśli chcesz dodać ikony/emoji do kategorii
+const List<Map<String, dynamic>> skillCategoriesWithIcons = [
   {
-    "img": "assets/flutter.png",
-    "title": "Flutter",
+    "category": "Software Development",
+    "icon": "💻", // emoji jako ikona
+    "skills": [
+      "C",
+      "C++",
+      "Python",
+      "MATLAB",
+      "LabVIEW",
+      "bash",
+      "VHDL",
+    ],
   },
   {
-    "img": "assets/dart.png",
-    "title": "Dart",
+    "category": "Microcontrollers & Embedded",
+    "icon": "🔧",
+    "skills": [
+      "STM32 (HAL/CubeMX)",
+      "AVR",
+      "ESP32",
+      "ARM Cortex-M",
+      "FreeRTOS basics",
+    ],
   },
   {
-    "img": "assets/html5.png",
-    "title": "HTML5",
+    "category": "Communication Protocols",
+    "icon": "📡",
+    "skills": [
+      "CAN",
+      "SPI",
+      "I2C",
+      "UART",
+      "Ethernet",
+      "BLE",
+      "WiFi",
+      "NFC",
+    ],
   },
   {
-    "img": "assets/css3.png",
-    "title": "CSS3",
+    "category": "PCB Design",
+    "icon": "🎨",
+    "skills": [
+      "Altium Designer",
+      "CircuitStudio",
+      "PADS",
+      "LTspice",
+    ],
   },
   {
-    "img": "assets/javascript.png",
-    "title": "JS",
+    "category": "Test Equipment",
+    "icon": "📊",
+    "skills": [
+      "Oscilloscope",
+      "Multimeter",
+      "Logic analyzers",
+      "ST-Link/SWD",
+    ],
   },
   {
-    "img": "assets/hugo.png",
-    "title": "Hugo",
+    "category": "Prototyping",
+    "icon": "🔨",
+    "skills": [
+      "PCB assembly",
+      "SMD/THT soldering",
+      "3D printing",
+    ],
+  },
+];
+
+// ============================================
+// JESZCZE BARDZIEJ ROZBUDOWANA - z poziomami (opcjonalnie)
+// ============================================
+
+/// Jeśli w przyszłości chcesz dodać poziomy zaawansowania
+const List<Map<String, dynamic>> skillCategoriesWithLevels = [
+  {
+    "category": "Programming Languages",
+    "skills": [
+      {"name": "C/C++", "level": "Advanced"},
+      {"name": "Python", "level": "Intermediate"},
+      {"name": "MATLAB", "level": "Intermediate"},
+      {"name": "VHDL", "level": "Basic"},
+    ],
   },
   {
-    "img": "assets/docker.png",
-    "title": "Docker",
+    "category": "Microcontrollers",
+    "skills": [
+      {"name": "STM32", "level": "Advanced"},
+      {"name": "ESP32", "level": "Intermediate"},
+      {"name": "AVR", "level": "Intermediate"},
+    ],
   },
-  {
-    "img": "assets/python.png",
-    "title": "Python",
-  },
-  {
-    "img": "assets/python.png",
-    "title": "Test",
-  }
+  // ... itd.
 ];

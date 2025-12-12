@@ -82,7 +82,7 @@ class _HomePageState extends State<HomePage> {
 
                         // platforms and skills
                         if (constraints.maxWidth >= kMedDesktopWidth)
-                          const SkillsDesktop()
+                          const SkillsDesktopTwoColumns()
                         else
                           const SkillsMobile(),
                       ],

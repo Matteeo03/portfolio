@@ -194,7 +194,7 @@ class _ProjectDetailPageState extends State<ProjectDetailPage> {
                       textAlign: TextAlign.justify,
                       textWidthBasis: TextWidthBasis.longestLine,
                       text: TextSpan(
-                        text: widget.project.description ?? widget.project.subtitle ?? '',
+                        text: widget.project.description ?? widget.project.subtitle,
                         style: const TextStyle(
                           fontSize: 18,
                           height: 1.5,
