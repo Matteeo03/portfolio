@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:url_launcher/url_launcher.dart';
 import '../constants/colors.dart';
 
 class Footer extends StatelessWidget {
@@ -51,18 +52,69 @@ class Footer extends StatelessWidget {
 
           const SizedBox(height: 16),
 
-          // ---- INFO TEXT ----
-          const Text(
-            "Made by Lucynka — based on a template by Shohruh AK\n"
-            "Significantly modified and rebuilt with Flutter 3.38.4\n"
-            "© 2024 Lucynka. All rights reserved.",
-            textAlign: TextAlign.center,
-            style: TextStyle(
-              fontWeight: FontWeight.w400,
-              height: 1.4,
-              color: CustomColor.whiteSecondary,
+          // ----------------------------------
+          // GITHUB LINK (KLIKALNY)
+          // ----------------------------------
+          InkWell(
+            onTap: () {
+              // działa w web i desktop
+              launchUrl(Uri.parse("https://github.com/Matteeo03/portfolio"));
+            },
+            child: Row(
+              mainAxisSize: MainAxisSize.min,
+              children: [
+                Image.asset(
+                  "assets/github.png",
+                  width: 20,
+                  height: 20,
+                  color: CustomColor.whiteSecondary,
+                ),
+                const SizedBox(width: 8),
+                const Text(
+                  "View source on GitHub",
+                  style: TextStyle(
+                    fontSize: 16,
+                    color: CustomColor.whiteSecondary,
+                    decoration: TextDecoration.underline,
+                  ),
+                ),
+              ],
             ),
           ),
+
+          const SizedBox(height: 22),
+
+          // ---- INFO TEXT ----
+          RichText(
+            textAlign: TextAlign.center,
+            text: TextSpan(
+              style: const TextStyle(
+                fontWeight: FontWeight.w400,
+                height: 1.4,
+                color: CustomColor.whiteSecondary,
+                fontSize: 14,
+              ),
+              children: [
+                const TextSpan(
+                  text: "Made by Lucynka — based on a template by Shohruh AK\n"
+                      "Significantly modified and rebuilt with ",
+                ),
+
+                // IKONKA FLUTTERA
+                WidgetSpan(
+                  alignment: PlaceholderAlignment.middle,
+                  child: Image.asset(
+                    "assets/flutter.png",
+                    height: 16, // dopasuj w razie potrzeby
+                  ),
+                ),
+
+                const TextSpan(
+                  text: " Flutter 3.38.4\n© 2025 Lucynka. This project is open-source (MIT).",
+                ),
+              ],
+            ),
+          )
         ],
       ),
     );
