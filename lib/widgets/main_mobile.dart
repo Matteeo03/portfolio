@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:my_portfolio/constants/colors.dart';
+import 'package:my_portfolio/constants/personal_info.dart';
 
 class MainMobile extends StatelessWidget {
   const MainMobile({super.key});
@@ -30,7 +31,7 @@ class MainMobile extends StatelessWidget {
         children: [
           // TEKST (najpierw tekst, potem zdjęcie)
           const Text(
-            "Hi,\nI'm Lucynka\nA Flutter Developer",
+            "Hi,\nI'm ${PersonalInfo.name}\nA Flutter Developer",
             style: TextStyle(
               fontSize: 30, // dopasowane do desktop (desktop miał 30)
               height: 1.5,
@@ -41,11 +42,7 @@ class MainMobile extends StatelessWidget {
           const SizedBox(height: 20),
 
           const Text(
-            "Jak dasz pracę to podam łapkę. \n\n"
-            "Pekińczyk – jedna z ras psów należąca do grupy\n"
-            "psów do towarzystwa, zaklasyfikowana do sekcji\n"
-            "spanieli japońskich i pekińczyków. Typ jamnikowaty.\n"
-            "Nie podlega próbom pracy.",
+            PersonalInfo.biography,
             style: TextStyle(
               fontSize: 16,
               height: 1.5,

@@ -184,15 +184,22 @@ class _ProjectDetailPageState extends State<ProjectDetailPage> {
 
                 const SizedBox(height: 30),
 
+                // ----------------------------
+                // TEXT
+                // ----------------------------
                 Center(
-                  child: SizedBox(
-                    width: sliderWidth,
-                    child: Text(
-                      widget.project.description ?? widget.project.subtitle,
-                      style: const TextStyle(
-                        fontSize: 18,
-                        height: 1.5,
-                        color: CustomColor.whiteSecondary,
+                  child: ConstrainedBox(
+                    constraints: BoxConstraints(maxWidth: sliderWidth),
+                    child: RichText(
+                      textAlign: TextAlign.justify,
+                      textWidthBasis: TextWidthBasis.longestLine,
+                      text: TextSpan(
+                        text: widget.project.description ?? widget.project.subtitle ?? '',
+                        style: const TextStyle(
+                          fontSize: 18,
+                          height: 1.5,
+                          color: CustomColor.whiteSecondary,
+                        ),
                       ),
                     ),
                   ),

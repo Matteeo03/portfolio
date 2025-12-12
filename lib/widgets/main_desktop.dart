@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:my_portfolio/constants/personal_info.dart';
 
 import '../constants/colors.dart';
 
@@ -29,7 +30,7 @@ class MainDesktop extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     const Text(
-                      "Hi,\nI'm Lucynka\nA Flutter Developer",
+                      "Hi,\nI'm ${PersonalInfo.name}\nA Flutter Developer",
                       style: TextStyle(
                         fontSize: 30,
                         height: 1.5,
@@ -37,20 +38,12 @@ class MainDesktop extends StatelessWidget {
                         color: CustomColor.whitePrimary,
                       ),
                     ),
-                    SizedBox(height: 12),
+                    const SizedBox(height: 12),
                     RichText(
                       textAlign: TextAlign.justify,
                       textWidthBasis: TextWidthBasis.longestLine,
                       text: const TextSpan(
-                        text: "Jak dasz pracę to podam łapkę. \n\n"
-                              "Pekińczyk – jedna z ras psów należąca do grupy "
-                              "psów do towarzystwa, zaklasyfikowana do sekcji "
-                              "spanieli japońskich i pekińczyków. Typ jamnikowaty. "
-                              "Nie podlega próbom pracy.\n\n"
-                              "Lorem ipsum dolor sit amet, consectetur adipiscing elit. "
-                              "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. "
-                              "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris "
-                              "nisi ut aliquip ex ea commodo consequat.\n",
+                        text: PersonalInfo.biography,
                         style: TextStyle(
                           fontSize: 17,
                           height: 1.5,
@@ -59,7 +52,7 @@ class MainDesktop extends StatelessWidget {
                         ),
                       ),
                     ),
-                    SizedBox(height: 15),
+                    const SizedBox(height: 15),
                   ],
                 ),
               ),

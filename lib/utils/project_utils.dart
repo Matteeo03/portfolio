@@ -5,9 +5,11 @@ class ProjectUtils {
   final String title;           // nazwa projektu
   final String subtitle;        // krótki opis
   final String? description;    // dłuższy opis (opcjonalny)
+  /* // Unused
   final String? androidLink;    // link do Google Play
   final String? iosLink;        // link do App Store
   final String? webLink;        // link do wersji web
+  */
 
   const ProjectUtils({
     required this.id,
@@ -16,47 +18,14 @@ class ProjectUtils {
     required this.title,
     required this.subtitle,
     this.description,
+    /* // Unused
     this.androidLink,
     this.iosLink,
     this.webLink,
+    */
   });
 }
 
-// #########################################################
-// TEAM PROJECTS
-// #########################################################
-
-final List<ProjectUtils> teamProjectUtils = [
-  const ProjectUtils(
-    id: 't1',
-    images: [
-      'assets/projects/pekinczyk_social_01.jpg',
-      'assets/projects/pekinczyk_social_02.jpg',
-    ],
-    technologies: ["Flutter", "Riverpod", "Firebase"],
-    title: 'Pekingese Social Club',
-    subtitle: 'Aplikacja społecznościowa dla właścicieli pekińczyków.',
-    description:
-        'Zespołowy projekt aplikacji umożliwiającej właścicielom pekińczyków dzielenie się zdjęciami, '
-        'tworzenie grup spacerowych, organizowanie wydarzeń i kontaktowanie się z pobliskimi hodowcami. '
-        'W projekcie wykorzystano Firebase Authentication oraz Firestore do zarządzania społecznością.',
-  ),
-
-  const ProjectUtils(
-    id: 't2',
-    images: [
-      'assets/projects/pekinczyk_health_01.jpg',
-      'assets/projects/pekinczyk_health_02.jpg',
-    ],
-    technologies: ["Flutter", "Dart", "REST API"],
-    title: 'Pekingese Health Companion',
-    subtitle: 'Platforma do monitorowania zdrowia pekińczyka.',
-    description:
-        'Projekt tworzony w zespole weterynarzy i programistów. Aplikacja oferuje system przypomnień o szczepieniach, '
-        'wizytach kontrolnych oraz podawaniu leków. Dodatkowo integruje się z zewnętrznym API, '
-        'aby pobierać informacje o typowych chorobach dla rasy pekińczyk i sugerować działania profilaktyczne.',
-  ),
-];
 
 // #########################################################
 // MY PROJECTS
@@ -107,5 +76,41 @@ final List<ProjectUtils> myProjectUtils = [
         'Aplikacja oferuje bibliotekę treningów, filmów instruktażowych oraz wyzwań tygodniowych '
         'dostosowanych do pekińczyków — rasy inteligentnej, ale o bardzo specyficznym temperamencie. '
         'Projekt zawiera również prosty system ocen postępów w szkoleniu.',
+  ),
+];
+
+// #########################################################
+// TEAM PROJECTS
+// #########################################################
+
+final List<ProjectUtils> teamProjectUtils = [
+  const ProjectUtils(
+    id: 't1',
+    images: [
+      'assets/projects/pekinczyk_social_01.jpg',
+      'assets/projects/pekinczyk_social_02.jpg',
+    ],
+    technologies: ["Flutter", "Riverpod", "Firebase"],
+    title: 'Pekingese Social Club',
+    subtitle: 'Aplikacja społecznościowa dla właścicieli pekińczyków.',
+    description:
+        'Zespołowy projekt aplikacji umożliwiającej właścicielom pekińczyków dzielenie się zdjęciami, '
+        'tworzenie grup spacerowych, organizowanie wydarzeń i kontaktowanie się z pobliskimi hodowcami. '
+        'W projekcie wykorzystano Firebase Authentication oraz Firestore do zarządzania społecznością.',
+  ),
+
+  const ProjectUtils(
+    id: 't2',
+    images: [
+      'assets/projects/pekinczyk_health_01.jpg',
+      'assets/projects/pekinczyk_health_02.jpg',
+    ],
+    technologies: ["Flutter", "Dart", "REST API"],
+    title: 'Pekingese Health Companion',
+    subtitle: 'Platforma do monitorowania zdrowia pekińczyka.',
+    description:
+        'Projekt tworzony w zespole weterynarzy i programistów. Aplikacja oferuje system przypomnień o szczepieniach, '
+        'wizytach kontrolnych oraz podawaniu leków. Dodatkowo integruje się z zewnętrznym API, '
+        'aby pobierać informacje o typowych chorobach dla rasy pekińczyk i sugerować działania profilaktyczne.',
   ),
 ];

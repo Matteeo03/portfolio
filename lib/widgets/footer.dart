@@ -2,13 +2,14 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:url_launcher/url_launcher.dart';
 import '../constants/colors.dart';
+import '../constants/personal_info.dart';
+import '../constants/sns_links.dart';
 
 class Footer extends StatelessWidget {
   const Footer({super.key});
 
   @override
   Widget build(BuildContext context) {
-    const email = "lucy_klusi@gmail.com";
 
     return Container(
       padding: const EdgeInsets.symmetric(vertical: 16, horizontal: 12),
@@ -21,8 +22,8 @@ class Footer extends StatelessWidget {
           Row(
             mainAxisSize: MainAxisSize.min,
             children: [
-              const SelectableText(
-                email,
+              const Text(
+                "✉ Mail me",
                 style: TextStyle(
                   fontSize: 20,
                   fontWeight: FontWeight.w600,
@@ -31,16 +32,17 @@ class Footer extends StatelessWidget {
               ),
               const SizedBox(width: 8),
 
-              // COPY ICON
+              // COPY BUTTON
               Tooltip(
                 message: "Copy e-mail",
                 child: IconButton(
                   icon: const Icon(Icons.copy, color: CustomColor.whitePrimary),
                   onPressed: () {
-                    Clipboard.setData(const ClipboardData(text: email));
+                    // Email is securely encoded by the contactAddress method using Base64; see details in personal_info.dart
+                    Clipboard.setData(ClipboardData(text: PersonalInfo.contactAddress));
                     ScaffoldMessenger.of(context).showSnackBar(
                       const SnackBar(
-                        content: Text("Copied!"),
+                        content: Text("E-mail address copied!"),
                         duration: Duration(seconds: 1),
                       ),
                     );
@@ -58,7 +60,7 @@ class Footer extends StatelessWidget {
           InkWell(
             onTap: () {
               // działa w web i desktop
-              launchUrl(Uri.parse("https://github.com/Matteeo03/portfolio"));
+              launchUrl(Uri.parse(SnsLinks.github));
             },
             child: Row(
               mainAxisSize: MainAxisSize.min,
