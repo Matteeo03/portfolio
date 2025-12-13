@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
 import '../constants/colors.dart';
-import '../i18n/locale_controller.dart';
-import 'language_switcher.dart';
 
 class HeaderMobile extends StatelessWidget {
   const HeaderMobile({
