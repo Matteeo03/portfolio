@@ -3,8 +3,6 @@ import '../constants/colors.dart';
 import '../constants/nav_items.dart';
 import 'language_switcher.dart';
 
-
-
 class HeaderDesktop extends StatelessWidget {
   const HeaderDesktop({
     super.key,

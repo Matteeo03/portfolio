@@ -4,6 +4,7 @@ import 'package:url_launcher/url_launcher.dart';
 import '../constants/colors.dart';
 import '../constants/personal_info.dart';
 import '../constants/sns_links.dart';
+import '../i18n/l_text.dart';
 
 class Footer extends StatelessWidget {
   const Footer({super.key});
@@ -22,8 +23,8 @@ class Footer extends StatelessWidget {
           Row(
             mainAxisSize: MainAxisSize.min,
             children: [
-              const Text(
-                "✉ Mail me",
+              const LText(
+                "contact",
                 style: TextStyle(
                   fontSize: 20,
                   fontWeight: FontWeight.w600,
@@ -72,8 +73,8 @@ class Footer extends StatelessWidget {
                   color: CustomColor.whiteSecondary,
                 ),
                 const SizedBox(width: 8),
-                const Text(
-                  "View source on GitHub",
+                const LText(
+                  'github_source',
                   style: TextStyle(
                     fontSize: 16,
                     color: CustomColor.whiteSecondary,
@@ -87,36 +88,12 @@ class Footer extends StatelessWidget {
           const SizedBox(height: 22),
 
           // ---- INFO TEXT ----
-          RichText(
-            textAlign: TextAlign.center,
-            text: TextSpan(
-              style: const TextStyle(
-                fontWeight: FontWeight.w400,
-                height: 1.4,
-                color: CustomColor.whiteSecondary,
-                fontSize: 14,
-              ),
-              children: [
-                const TextSpan(
-                  text: "Made by Lucynka — based on a template by Shohruh AK\n"
-                      "Significantly modified and rebuilt with ",
-                ),
-
-                // IKONKA FLUTTERA
-                WidgetSpan(
-                  alignment: PlaceholderAlignment.middle,
-                  child: Image.asset(
-                    "assets/flutter.png",
-                    height: 16, // dopasuj w razie potrzeby
-                  ),
-                ),
-
-                const TextSpan(
-                  text: " Flutter 3.38.4\n© 2025 Lucynka. This project is open-source (MIT).",
-                ),
-              ],
-            ),
-          )
+          const LRichText(
+            leftKey: 'made_by_p1',
+            rightKey: 'made_by_p2',
+            iconAsset: 'assets/flutter.png',
+            iconHeight: 16,
+          ),
         ],
       ),
     );

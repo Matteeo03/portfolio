@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-
 import '../constants/colors.dart';
 import '../utils/project_utils.dart';
 import 'project_card.dart';
+import '../i18n/l_text.dart';
 
 class ProjectsSection extends StatelessWidget {
   const ProjectsSection({super.key});
@@ -36,8 +36,8 @@ class ProjectsSection extends StatelessWidget {
             children: [
               Icon(Icons.arrow_upward, color: Colors.white, size: 20),
               SizedBox(width: 12),
-              Text(
-                "Powrót",
+              LText(
+                'return',
                 style: TextStyle(
                   color: Colors.white,
                   fontSize: 16,
@@ -60,8 +60,8 @@ class ProjectsSection extends StatelessWidget {
       child: Column(
         children: [
           // My projects title
-          const Text(
-            "Moje projekty",
+          const LText(
+            'projects_my',
             style: TextStyle(
               fontSize: 26,
               fontWeight: FontWeight.bold,
@@ -89,8 +89,8 @@ class ProjectsSection extends StatelessWidget {
           const SizedBox(height: 80),
 
           // Team projects title
-          const Text(
-            "Projekty, w których brałem udział",
+          const LText(
+            'projects_team',
             style: TextStyle(
               fontSize: 26,
               fontWeight: FontWeight.bold,
