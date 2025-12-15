@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:my_portfolio/utils/project_utils.dart';
 import '../constants/colors.dart';
 import 'package:my_portfolio/pages/project_detail_page.dart'; // dodaj import na górze
+import 'package:my_portfolio/i18n/l_text.dart';
 
 class ProjectCardWidget extends StatelessWidget {
   const ProjectCardWidget({
@@ -42,8 +43,8 @@ class ProjectCardWidget extends StatelessWidget {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   // Tytuł projektu
-                  Text(
-                    project.title,
+                  LText(
+                    project.titleKey,
                     style: const TextStyle(
                       fontSize: 19,
                       fontWeight: FontWeight.bold,
@@ -55,8 +56,8 @@ class ProjectCardWidget extends StatelessWidget {
 
                   // Opis projektu
                   Expanded(
-                    child: Text(
-                      project.subtitle,
+                    child: LText(
+                      project.subtitleKey,
                       style: const TextStyle(
                         fontSize: 15,
                         height: 1.4,
@@ -88,8 +89,8 @@ class ProjectCardWidget extends StatelessWidget {
                           color: CustomColor.bgLight1,
                           borderRadius: BorderRadius.circular(6),
                         ),
-                        child: const Text(
-                          "Zobacz szczegóły",
+                        child: const LText(
+                          'details_button',
                           style: TextStyle(
                             color: Colors.white,
                             fontSize: 14,

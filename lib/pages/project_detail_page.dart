@@ -2,6 +2,9 @@ import 'dart:math';
 import 'package:flutter/material.dart';
 import 'package:my_portfolio/utils/project_utils.dart';
 import 'package:my_portfolio/constants/colors.dart';
+import 'package:my_portfolio/i18n/l_text.dart';
+import 'package:my_portfolio/i18n/locale_controller.dart';
+import 'package:my_portfolio/i18n/strings.dart';
 
 class ProjectDetailPage extends StatefulWidget {
   final ProjectUtils project;
@@ -45,8 +48,8 @@ class _ProjectDetailPageState extends State<ProjectDetailPage> {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Center(
-                  child: Text(
-                    widget.project.title,
+                  child: LText(
+                    widget.project.titleKey,
                     style: const TextStyle(
                       fontSize: 28,
                       fontWeight: FontWeight.bold,
@@ -67,8 +70,8 @@ class _ProjectDetailPageState extends State<ProjectDetailPage> {
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        Text(
-                          'Built with:',
+                        LText(
+                          'built_with',
                           style: TextStyle(
                             fontSize: 14,
                             fontWeight: FontWeight.w600,
@@ -190,17 +193,22 @@ class _ProjectDetailPageState extends State<ProjectDetailPage> {
                 Center(
                   child: ConstrainedBox(
                     constraints: BoxConstraints(maxWidth: sliderWidth),
-                    child: RichText(
-                      textAlign: TextAlign.justify,
-                      textWidthBasis: TextWidthBasis.longestLine,
-                      text: TextSpan(
-                        text: widget.project.description ?? widget.project.subtitle,
-                        style: const TextStyle(
-                          fontSize: 18,
-                          height: 1.5,
-                          color: CustomColor.whiteSecondary,
-                        ),
-                      ),
+                    child: ValueListenableBuilder<String>(
+                      valueListenable: localeNotifier,
+                      builder: (_, __, ___) {
+                        return RichText(
+                          textAlign: TextAlign.justify,
+                          textWidthBasis: TextWidthBasis.longestLine,
+                          text: TextSpan(
+                            text: t(widget.project.descriptionKey),
+                            style: const TextStyle(
+                              fontSize: 18,
+                              height: 1.5,
+                              color: CustomColor.whiteSecondary,
+                            ),
+                          ),
+                        );
+                      },
                     ),
                   ),
                 ),

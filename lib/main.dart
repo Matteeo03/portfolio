@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:my_portfolio/pages/home_page.dart';
 import 'package:my_portfolio/styles/theme.dart';
-import 'i18n/strings.dart'; // import mapy
-import 'i18n/locale_controller.dart';
+// import 'i18n/strings.dart'; // import mapy
+// import 'i18n/locale_controller.dart';
 
+/*
 // widget LText — używaj zamiast Text(...)
 class LText extends StatelessWidget {
   final String keyName;
@@ -21,6 +22,7 @@ class LText extends StatelessWidget {
     );
   }
 }
+*/
 
 void main() {
   runApp(const MyApp());

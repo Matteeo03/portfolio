@@ -88,3 +88,29 @@ class LRichText extends StatelessWidget {
     );
   }
 }
+
+class LSpan extends StatelessWidget {
+  final String keyName;
+  final TextStyle? style;
+
+  const LSpan(
+    this.keyName, {
+    super.key,
+    this.style,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    return ValueListenableBuilder<String>(
+      valueListenable: localeNotifier,
+      builder: (_, __, ___) {
+        return Text.rich(
+          TextSpan(
+            text: t(keyName),
+            style: style,
+          ),
+        );
+      },
+    );
+  }
+}

@@ -7,28 +7,96 @@ const Map<String, Map<String, String>> strings = {
     'about_short': "Pekingese — a companion dog breed...",
     'projects_my': "My projects",
     'projects_team': "Team Projects",
-    'details_butto' :"View details",
+    'built_with': "Built with: ",
+    'details_button' :"View details",
     'contact': "✉ Mail me",
     'return': "   Top",
     'copy_email': "Copy e-mail",
     'github_source': "View source on GitHub",
     'made_by_p1': "Made by: ${PersonalInfo.name} — built with ",
     'made_by_p2': " Flutter 3.38.4\n© 2025 • This project is open-source (MIT)",
-    // dodaj wszystkie klucze, których używasz w UI...
+
+    // #########################################################
+    // MY PROJECTS
+    // #########################################################
+
+    // Project m1
+    'project.m1.title': 'Pekingese Tracker',
+    'project.m1.subtitle': 'App for monitoring Pekingese activity.',
+    'project.m1.description': 'The app allows Pekingese owners to track daily activity, walked distances, feeding times, and health behaviors. The project implements a simple statistics system and data export functionality. Designed with small dog breeds in mind, which require regular monitoring of physical activity.',
+
+    // Project m2
+    'project.m2.title': 'Pekingese Diet Planner',
+    'project.m2.subtitle': 'Individual diet planner for Pekingese.',
+    'project.m2.description': 'The project focuses on creating optimal nutrition plans for Pekingese, considering age, weight, allergies, and activity level. The app allows recording meals and monitoring the dog\'s reactions to specific ingredients.',
+
+    // Project m3
+    'project.m3.title': 'Pekingese Training Hub',
+    'project.m3.subtitle': 'Set of exercises and tricks specifically for Pekingese.',
+    'project.m3.description': 'The app offers a library of trainings, instructional videos, and weekly challenges tailored to Pekingese - an intelligent breed with a very specific temperament. The project also includes a simple system for assessing training progress.',
+
+    // #########################################################
+    // TEAM PROJECTS
+    // #########################################################
+
+    // Project t1
+    'project.t1.title': 'Pekingese Social Club',
+    'project.t1.subtitle': 'Social app for Pekingese owners.',
+    'project.t1.description': 'Team project of an application that allows Pekingese owners to share photos, create walking groups, organize events, and contact nearby breeders. The project uses Firebase Authentication and Firestore for community management.',
+
+    // Project t2
+    'project.t2.title': 'Pekingese Health Companion',
+    'project.t2.subtitle': 'Platform for monitoring Pekingese health.',
+    'project.t2.description': 'Project created by a team of veterinarians and developers. The app offers a system for reminders about vaccinations, check-up visits, and medication administration. Additionally, it integrates with an external API to fetch information about common diseases for the Pekingese breed and suggest preventive actions.',
+
   },
   'pl': {
     'greeting': "Cześć,\nJestem Lucynka\nFlutter Developer",
     'about_short': "Pekińczyk — pies do towarzystwa...",
     'projects_my': "Moje projekty",
-    'details_butto' :"Zobacz szczegóły",
+    'details_button' :"Zobacz szczegóły",
     'projects_team': "Projekty zespołowe",
+    'built_with': "Wykorzystane technologie: ",
     'contact': "✉ Napisz do mnie",
     'return': "Powrót",
     'copy_email': "Kopiuj e-mail",
     'github_source': "Zobacz kod na GitHubie",
     'made_by_p1': "Stworzone przez: ${PersonalInfo.name} — zbudowane z ",
     'made_by_p2': " Flutter 3.38.4\n© 2025 • Projekt open-source (MIT)",
-    // ...
+
+    // #########################################################
+    // MY PROJECTS - MOJE PROJEKTY
+    // #########################################################
+
+    // Projekt m1
+    'project.m1.title': 'Pekińczyk Tracker',
+    'project.m1.subtitle': 'Aplikacja do monitorowania aktywności pekińczyka.',
+    'project.m1.description': 'Aplikacja umożliwia właścicielom pekińczyków śledzenie dziennej aktywności, przebytych spacerów, godzin karmienia oraz zachowań zdrowotnych. W projekcie zaimplementowano prosty system statystyk oraz możliwość eksportu danych. Zaprojektowana z myślą o małych rasach psów, które wymagają regularnej kontroli aktywności fizycznej.',
+
+    // Projekt m2
+    'project.m2.title': 'Pekińczyk Diet Planner',
+    'project.m2.subtitle': 'Indywidualny planer diety pekińczyka.',
+    'project.m2.description': 'Projekt skupia się na tworzeniu optymalnych planów żywieniowych dla pekińczyków, z uwzględnieniem wieku, wagi, alergii oraz poziomu aktywności. Aplikacja pozwala rejestrować posiłki i monitorować reakcje psa na poszczególne składniki.',
+
+    // Projekt m3
+    'project.m3.title': 'Pekińczyk Training Hub',
+    'project.m3.subtitle': 'Zestaw ćwiczeń i tricków specjalnie dla pekińczyków.',
+    'project.m3.description': 'Aplikacja oferuje bibliotekę treningów, filmów instruktażowych oraz wyzwań tygodniowych dostosowanych do pekińczyków — rasy inteligentnej, ale o bardzo specyficznym temperamencie. Projekt zawiera również prosty system ocen postępów w szkoleniu.',
+
+    // #########################################################
+    // TEAM PROJECTS - PROJEKTY ZESPOŁOWE
+    // #########################################################
+
+    // Projekt t1
+    'project.t1.title': 'Pekińczyk Social Club',
+    'project.t1.subtitle': 'Aplikacja społecznościowa dla właścicieli pekińczyków.',
+    'project.t1.description': 'Zespołowy projekt aplikacji umożliwiającej właścicielom pekińczyków dzielenie się zdjęciami, tworzenie grup spacerowych, organizowanie wydarzeń i kontaktowanie się z pobliskimi hodowcami. W projekcie wykorzystano Firebase Authentication oraz Firestore do zarządzania społecznością.',
+
+    // Projekt t2
+    'project.t2.title': 'Pekińczyk Health Companion',
+    'project.t2.subtitle': 'Platforma do monitorowania zdrowia pekińczyka.',
+    'project.t2.description': 'Projekt tworzony w zespole weterynarzy i programistów. Aplikacja oferuje system przypomnień o szczepieniach, wizytach kontrolnych oraz podawaniu leków. Dodatkowo integruje się z zewnętrznym API, aby pobierać informacje o typowych chorobach dla rasy pekińczyk i sugerować działania profilaktyczne.',
+
   },
 };
 
