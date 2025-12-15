@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:my_portfolio/constants/colors.dart';
 import 'package:my_portfolio/i18n/l_text.dart';
-import 'package:my_portfolio/utils/project_utils.dart';
+import 'package:my_portfolio/projects/project_model.dart';
 import 'package:my_portfolio/pages/project_detail_page.dart';
 
 /// Card widget for displaying project previews in a horizontal layout.
@@ -15,7 +15,7 @@ class ProjectCardWidget extends StatelessWidget {
   });
 
   /// The project data to display in this card
-  final ProjectUtils project;
+  final Project project;
 
   @override
   Widget build(BuildContext context) {

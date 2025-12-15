@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:my_portfolio/constants/colors.dart';
-import 'package:my_portfolio/constants/personal_info.dart';
-import 'package:my_portfolio/constants/sns_links.dart';
+import 'package:my_portfolio/data/personal_info.dart';
+import 'package:my_portfolio/data/sns_links.dart';
 import 'package:my_portfolio/i18n/l_text.dart';
 import 'package:my_portfolio/i18n/locale_controller.dart';
 import 'package:my_portfolio/i18n/strings.dart';

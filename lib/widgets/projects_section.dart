@@ -1,19 +1,23 @@
 import 'package:flutter/material.dart';
 import 'package:my_portfolio/constants/colors.dart';
 import 'package:my_portfolio/i18n/l_text.dart';
-import 'package:my_portfolio/utils/project_utils.dart';
+import 'package:my_portfolio/projects/project_factory.dart';
+import 'package:my_portfolio/projects/project_data.dart';
 import 'package:my_portfolio/widgets/project_card.dart';
 
-/// Projects section widget that displays both personal and team projects.
-/// 
-/// Includes a scroll-to-top button for easy navigation back to the page top.
+/// Projects section widget displaying personal and team projects.
+///
+/// This widget is responsible for:
+/// - Creating project lists via ProjectFactory
+/// - Rendering project cards
+/// - Providing a "Back to top" button for better UX
 class ProjectsSection extends StatelessWidget {
   const ProjectsSection({super.key});
 
   /// Creates a styled button that scrolls back to the top of the page.
-  /// 
-  /// Uses the nearest Scrollable ancestor to find the scroll position
-  /// and animates to the minimum scroll extent (top of the page).
+  ///
+  /// Uses the nearest Scrollable ancestor and animates to the
+  /// minimum scroll extent (top of the page).
   Widget _backToTopButton(BuildContext context) {
     return Container(
       width: 140,
@@ -24,27 +28,23 @@ class ProjectsSection extends StatelessWidget {
       child: InkWell(
         borderRadius: BorderRadius.circular(5),
         onTap: () {
-          // Get the current scrollable widget and animate to top
-          final scrollableState = Scrollable.of(context);
-          final position = scrollableState.position;
-          position.animateTo(
-            position.minScrollExtent,
+          final scrollable = Scrollable.of(context);
+
+          scrollable.position.animateTo(
+            scrollable.position.minScrollExtent,
             duration: const Duration(milliseconds: 400),
             curve: Curves.easeInOut,
           );
         },
         child: const Padding(
-          padding: EdgeInsets.symmetric(
-            horizontal: 20.0,
-            vertical: 12.0,
-          ),
+          padding: EdgeInsets.symmetric(horizontal: 20, vertical: 12),
           child: Row(
             mainAxisSize: MainAxisSize.min,
             children: [
               Icon(Icons.arrow_upward, color: Colors.white, size: 20),
               SizedBox(width: 12),
               LText(
-                'return', // "Back to top" text
+                'return', // "Back to top"
                 style: TextStyle(
                   color: Colors.white,
                   fontSize: 16,
@@ -59,14 +59,18 @@ class ProjectsSection extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final screenWidth = MediaQuery.of(context).size.width;
+    // Build project lists using the factory (single source of truth)
+    final myProjects = ProjectFactory.listFromIds(myProjectIds);
+    final teamProjects = ProjectFactory.listFromIds(teamProjectIds);
 
     return Container(
-      width: screenWidth,
+      width: double.infinity,
       padding: const EdgeInsets.fromLTRB(25, 20, 25, 60),
       child: Column(
         children: [
-          // Personal projects section title
+          // --------------------
+          // MY PROJECTS
+          // --------------------
           const LText(
             'projects_my',
             style: TextStyle(
@@ -78,24 +82,23 @@ class ProjectsSection extends StatelessWidget {
 
           const SizedBox(height: 50),
 
-          // Personal projects displayed in a wrapped layout
           ConstrainedBox(
             constraints: const BoxConstraints(maxWidth: 900),
             child: Wrap(
               spacing: 25,
               runSpacing: 25,
               children: [
-                for (int i = 0; i < myProjectUtils.length; i++)
-                  ProjectCardWidget(
-                    project: myProjectUtils[i],
-                  ),
+                for (final project in myProjects)
+                  ProjectCardWidget(project: project),
               ],
             ),
           ),
 
           const SizedBox(height: 80),
 
-          // Team projects section title
+          // --------------------
+          // TEAM PROJECTS
+          // --------------------
           const LText(
             'projects_team',
             style: TextStyle(
@@ -107,23 +110,23 @@ class ProjectsSection extends StatelessWidget {
 
           const SizedBox(height: 50),
 
-          // Team projects displayed in a wrapped layout
           ConstrainedBox(
             constraints: const BoxConstraints(maxWidth: 900),
             child: Wrap(
               spacing: 25,
               runSpacing: 25,
               children: [
-                for (int i = 0; i < teamProjectUtils.length; i++)
-                  ProjectCardWidget(
-                    project: teamProjectUtils[i],
-                  ),
+                for (final project in teamProjects)
+                  ProjectCardWidget(project: project),
               ],
             ),
           ),
 
           const SizedBox(height: 40),
-          // Scroll to top button centered at the bottom
+
+          // --------------------
+          // BACK TO TOP
+          // --------------------
           Center(child: _backToTopButton(context)),
         ],
       ),

@@ -1,4 +1,4 @@
-import 'package:my_portfolio/constants/personal_info.dart';
+import 'package:my_portfolio/data/personal_info.dart';
 import 'package:my_portfolio/i18n/locale_controller.dart';
 
 /// Internationalization strings for the portfolio application.

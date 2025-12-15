@@ -4,12 +4,12 @@ import 'package:my_portfolio/constants/colors.dart';
 import 'package:my_portfolio/i18n/l_text.dart';
 import 'package:my_portfolio/i18n/locale_controller.dart';
 import 'package:my_portfolio/i18n/strings.dart';
-import 'package:my_portfolio/utils/project_utils.dart';
+import 'package:my_portfolio/projects/project_model.dart';
 
 /// Detailed view page for a single project.
 /// Displays project images, description, technologies, and navigation controls.
 class ProjectDetailPage extends StatefulWidget {
-  final ProjectUtils project;
+  final Project project;
   const ProjectDetailPage({super.key, required this.project});
 
   @override

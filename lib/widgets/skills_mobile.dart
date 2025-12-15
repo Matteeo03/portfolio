@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:my_portfolio/constants/colors.dart';
-import 'package:my_portfolio/constants/skill_items.dart';
+import 'package:my_portfolio/data/skill_items.dart';
 import 'package:my_portfolio/i18n/locale_controller.dart';
 import 'package:my_portfolio/i18n/strings.dart';
 

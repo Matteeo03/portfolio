@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:my_portfolio/constants/colors.dart';
-import 'package:my_portfolio/constants/nav_items.dart';
+import 'package:my_portfolio/data/nav_items.dart';
 import 'package:my_portfolio/i18n/locale_controller.dart';
 import 'package:my_portfolio/i18n/strings.dart';
 import 'package:my_portfolio/widgets/language_switcher.dart';
