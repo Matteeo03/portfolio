@@ -8,7 +8,7 @@ import 'project_model.dart';
 /// - centralizes project creation logic
 /// - generates i18n keys automatically
 /// - applies safe fallbacks for missing data
-class ProjectFactory {
+class ProjectRepository {
   /// Prefix used for i18n keys:
   /// e.g. project.m1.title
   static const String _i18nPrefix = 'project';

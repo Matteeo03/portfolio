@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:my_portfolio/constants/colors.dart';
 import 'package:my_portfolio/i18n/l_text.dart';
-import 'package:my_portfolio/projects/project_factory.dart';
+import 'package:my_portfolio/projects/project_repository.dart';
 import 'package:my_portfolio/projects/project_data.dart';
 import 'package:my_portfolio/widgets/project_card.dart';
 
@@ -60,8 +60,8 @@ class ProjectsSection extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     // Build project lists using the factory (single source of truth)
-    final myProjects = ProjectFactory.listFromIds(myProjectIds);
-    final teamProjects = ProjectFactory.listFromIds(teamProjectIds);
+    final myProjects = ProjectRepository.listFromIds(myProjectIds);
+    final teamProjects = ProjectRepository.listFromIds(teamProjectIds);
 
     return Container(
       width: double.infinity,
