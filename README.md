@@ -41,7 +41,7 @@ Showcases projects, skills and contact details.
 
 **Prerequisites**
 
-- Flutter SDK (recommended stable channel)  
+- Flutter SDK
 - Git
 
 **Clone**
@@ -145,7 +145,7 @@ web/
 - Translation keys are in `i18n/strings.dart` (pattern: `project.{id}.title` etc.).
 - Desktop / mobile variants are implemented per-section (e.g. `main_desktop.dart` / `main_mobile.dart`) for responsive control.
 
-## Contributing & how to add a project
+## How to add a project
 
 1. Add image(s) to `assets/`
 2. Add an entry to `project_data.dart` (or `project_repository`) — follow existing IDs `m1`, `t1`...
