@@ -5,10 +5,8 @@
 
 [![Live Demo](https://img.shields.io/badge/demo-live-brightgreen)](https://pietrzak-mateusz.github.io/portfolio/)
 [![Flutter](https://img.shields.io/badge/Flutter-3.38.4-blue.svg)](https://flutter.dev/)
-[![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
+[![License](https://img.shields.io/badge/license-MIT-blue.svg)](https://mit-license.org/)
 [![Platform](https://img.shields.io/badge/platform-Web-orange)](https://flutter.dev/web)
-
----
 
 ## Preview
 
@@ -24,8 +22,6 @@
 ![Project details](assets/screenshots/project-detail.png)
 > ...
 
----
-
 ## Features
 
 - Responsive layout: desktop / tablet / mobile  
@@ -35,15 +31,11 @@
 - Simple contact (e-mail / copy-to-clipboard)  
 - Desktop/mobile variants
 
----
-
 ## Built with
 
 - Flutter (Web)  
 - Dart  
 - Hosted example: GitHub Pages (optional)
-
----
 
 ## Quick start
 
@@ -85,8 +77,6 @@ flutter build web --release
 # output is in build/web
 ```
 
----
-
 ## Deployment (GitHub Pages)
 
 **TL;DR:**
@@ -127,11 +117,9 @@ git push -f origin gh-pages
 
 > **Important:** Your repository must be **public** for GitHub Pages to work with the free plan. Private repositories require a GitHub Pro account for GitHub Pages hosting.
 
-After a few minutes (up to 10), your site will be available at:
+After a few minutes, your site will be available at:
 
 https://YOUR_USERNAME.github.io/portfolio/
-
----
 
 ## Project structure (short)
 
@@ -151,15 +139,11 @@ web/
 └── index.html
 ```
 
----
-
 ## Notes on architecture
 
-* Data (projects, skills) is separated from UI — add new projects by editing `project_data` and adding images.
-* Translation keys are in `i18n/strings.dart` (pattern: `project.{id}.title` etc.).
-* Desktop / mobile variants are implemented per-section (e.g. `main_desktop.dart` / `main_mobile.dart`) for responsive control.
-
----
+- Data (projects, skills) is separated from UI — add new projects by editing `project_data` and adding images.
+- Translation keys are in `i18n/strings.dart` (pattern: `project.{id}.title` etc.).
+- Desktop / mobile variants are implemented per-section (e.g. `main_desktop.dart` / `main_mobile.dart`) for responsive control.
 
 ## Contributing & how to add a project
 
@@ -168,19 +152,13 @@ web/
 3. Add translation strings in `i18n/strings.dart` for `project.{id}.title`, `...subtitle`, `...description`
 4. Run locally and verify layout
 
----
-
 ## Credits
 
 This project started from a public template by **Shohruh AK** and was substantially reworked. I credit the original template as the starting point.
 
----
-
 ## License
 
-This project is open-source and licensed under the **MIT License** — see [LICENSE](LICENSE).
-
----
+This project is open-source and licensed under the **MIT License** - see [LICENSE](LICENSE).
 
 ## Author
 
