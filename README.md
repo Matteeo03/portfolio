@@ -96,7 +96,7 @@ git remote add origin https://github.com/YOUR_USERNAME/portfolio.git
 git push -f origin gh-pages
 ```
 
----
+**Detailed instructions:**
 
 1. Build the web app:
 
