@@ -29,8 +29,8 @@ final Map<String, List<String>> projectImages = {
 
 /// Mapping of project IDs to their technology stacks.
 final Map<String, List<String>> projectTechnologies = {
-  'm1': ['Flutter', 'Dart', 'Provider'],
-  'm2': ['Flutter', 'Dart', 'SQLite'],
+  'm1': ['Embedded Systems', 'Ultrasonic Sensors', 'STM32F411RE', 'Analog-digital systems', 'IQ Demodulation', 'Monopulse Technique', 'C/C++', 'MATLAB', 'Altium Designer', 'PCB', 'UART', 'DMA'],
+  'm2': ['Embedded Systems', 'Ultrasonic Sensors', 'ATXmega16A4U', 'Analog-digital systems', 'Real-Time Systems', 'FAT32', 'C', 'MATLAB', 'Altium Designer', 'PCB', 'SPI', 'UART', 'DMA'],
   'm3': ['Flutter', 'Dart', 'Firebase'],
   't1': ['Flutter', 'Riverpod', 'Firebase'],
 };

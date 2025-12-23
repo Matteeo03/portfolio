@@ -194,11 +194,14 @@ class _ProjectDetailPageState extends State<ProjectDetailPage> {
                           textAlign: TextAlign.justify,
                           textWidthBasis: TextWidthBasis.longestLine,
                           text: TextSpan(
-                            text: t(widget.project.descriptionKey),
-                            style: const TextStyle(
-                              fontSize: 18,
-                              height: 1.5,
-                              color: CustomColor.whiteSecondary,
+                            // Usuwamy parametr 'text', używamy 'children'
+                            children: parseTextWithLinks(
+                              t(widget.project.descriptionKey), 
+                              TextStyle( // To jest Twój styl bazowy
+                                fontSize: 18,
+                                height: 1.5,
+                                color: CustomColor.whiteSecondary,
+                              ),
                             ),
                           ),
                         );
