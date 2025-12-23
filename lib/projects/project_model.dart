@@ -14,6 +14,9 @@ class Project {
   /// Image asset paths used in galleries or sliders
   final List<String> images;
 
+  /// Optional i18n keys for image captions (index-aligned with [images])
+  final List<String>? imageCaptionKeys;
+
   /// Technologies used in the project (displayed as a list)
   final List<String> technologies;
 
@@ -25,9 +28,11 @@ class Project {
   const Project({
     required this.id,
     required this.images,
+    this.imageCaptionKeys,
     required this.technologies,
     required this.titleKey,
     required this.subtitleKey,
     required this.descriptionKey,
   });
 }
+

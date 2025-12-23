@@ -22,6 +22,7 @@ class ProjectRepository {
       id: id,
       images: projectImages[id] ??
           const ['assets/projects/placeholder.png'],
+      imageCaptionKeys: projectImageCaptions[id],
       technologies: projectTechnologies[id] ??
           const ['Flutter', 'Dart'],
       titleKey: '$_i18nPrefix.$id.title',

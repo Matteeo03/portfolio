@@ -140,6 +140,27 @@ class _ProjectDetailPageState extends State<ProjectDetailPage> {
 
                         const SizedBox(height: 12),
 
+                        if (widget.project.imageCaptionKeys != null)
+                          Padding(
+                            padding: const EdgeInsets.only(top: 8),
+                            child: ValueListenableBuilder<String>(
+                              valueListenable: localeNotifier,
+                              builder: (_, __, ___) {
+                                return Text(
+                                  t(widget.project.imageCaptionKeys![_currentPage]),
+                                  style: const TextStyle(
+                                    color: CustomColor.whiteSecondary,
+                                    fontSize: 16,
+                                    // fontStyle: FontStyle.italic,
+                                  ),
+                                  textAlign: TextAlign.center,
+                                );
+                              },
+                            ),
+                          ),
+
+                        const SizedBox(height: 12),
+
                         // Gallery navigation (only shown if multiple images)
                         if (widget.project.images.length > 1)
                           Row(

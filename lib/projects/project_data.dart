@@ -27,6 +27,27 @@ final Map<String, List<String>> projectImages = {
   ],
 };
 
+/// Mapping of project IDs to i18n keys for image captions.
+/// Order MUST match the order of images in [projectImages].
+final Map<String, List<String>> projectImageCaptions = {
+  'm1': [
+    'project.m1.image.0',
+    'project.m1.image.1',
+  ],
+  'm2': [
+    'project.m2.image.0',
+    'project.m2.image.1',
+  ],
+  'm3': [
+    'project.m3.image.0',
+    'project.m3.image.1',
+  ],
+  't1': [
+    'project.t1.image.0',
+    'project.t1.image.1',
+  ],
+};
+
 /// Mapping of project IDs to their technology stacks.
 final Map<String, List<String>> projectTechnologies = {
   'm1': ['Embedded Systems', 'Ultrasonic Sensors', 'STM32F411RE', 'Analog-digital systems', 'IQ Demodulation', 'Monopulse Technique', 'C/C++', 'MATLAB', 'Altium Designer', 'PCB', 'UART', 'DMA'],

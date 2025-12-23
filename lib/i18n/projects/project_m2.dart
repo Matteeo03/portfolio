@@ -2,6 +2,8 @@
 const Map<String, String> projectM2StringsPl = {
   'project.m2.title': 'Anemometr Ultradźwiękowy',
   'project.m2.subtitle': 'Dwuosiowy ultradźwiękowy czujnik prędkości i kierunku wiatru z pomiarem przesunięcia fazowego oraz rejestracją danych.',
+  'project.m2.image.0': '...',
+  'project.m2.image.1': '...',
   'project.m2.description': '''
 Dwuosiowy anemometr ultradźwiękowy wykorzystujący pomiar przesunięcia fazowego.
 
@@ -34,6 +36,8 @@ https://apd.usos.pw.edu.pl/diplomas/22611/?_s=1
 const Map<String, String> projectM2StringsEn = {
   'project.m2.title': 'Ultrasonic Anemometer',
   'project.m2.subtitle': 'Two-axis ultrasonic wind speed and direction sensor with phase-shift measurement and data logging.',
+  'project.m2.image.0': '...',
+  'project.m2.image.1': '...',
   'project.m2.description': '''
 Two-axis ultrasonic anemometer using phase-shift measurement.
 
