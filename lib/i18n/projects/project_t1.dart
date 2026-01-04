@@ -3,7 +3,7 @@ const Map<String, String> projectT1StringsPl = {
   'project.t1.title': 'Rozproszona sieć czujników sejsmicznych i infradźwiękowych',
   'project.t1.subtitle': 'Rozwój i wdrożenie sieci czujników sejsmicznych i infradźwiękowych monitorujących szum środowiskowy w detektorach fal grawitacyjnych. Instalacje w trzech międzynarodowych ośrodkach.',
   'project.t1.image.0': 'Instalacja mikrofonu infradźwiękowego w ETpathfinder (Maastricht University).',
-  'project.t1.image.1': 'Montaż infradźwiękowego czujnika w kopalni Sos Enattos (Sardynia) — potencjalna lokalizacja ET.',
+  'project.t1.image.1': 'Montaż infradźwiękowego czujnika w kopalni Sos Enattos (Sardynia) - potencjalna lokalizacja ET.',
   'project.t1.image.2': 'Zestaw pomiarowy: mikrofon infradźwiękowy i sejsmometr zainstalowane przy detektorze Virgo (EGO).',
   'project.t1.description': '''
 Monitorowanie szumu newtonowskiego w detektorach fal grawitacyjnych
