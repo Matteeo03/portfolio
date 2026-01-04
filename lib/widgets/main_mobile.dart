@@ -61,7 +61,7 @@ class MainMobile extends StatelessWidget {
             child: ClipRRect(
               borderRadius: BorderRadius.circular(8),
               child: Image.asset(
-                "assets/Luska_transparency.webp",
+                "assets/profilowe.jpg",
                 width: imageWidth,
                 fit: BoxFit.contain,
               ),

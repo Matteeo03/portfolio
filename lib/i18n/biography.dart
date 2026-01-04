@@ -1,26 +1,27 @@
 const Map<String, String> biographyStringsPl = {
-    'biography': "Jak dasz pracę to podam łapkę. \n\n"
-                 "Pekińczyk to jedna z ras psów należąca do grupy "
-                 "psów do towarzystwa, zaklasyfikowana do sekcji "
-                 "spanieli japońskich i pekińczyków. Typ jamnikowaty. "
-                 "Nie podlega próbom pracy.\n\n"
-				         "Pekińczyk jest rasą wyhodowaną w Mandżurii. Do połowy XIX "
-				         "wieku rasa ta znana była wyłącznie w Chinach, gdzie "
-				         "pekińczyki hodowane były jako psy świątynne. Według chińskich "
-				         "wierzeń drobna budowa pekińczyka pozwalała mu łatwo gonić "
-				         "i chwytać pojawiające się w świątyniach demony, a jego "
-				         "waleczne serce - bez trudu stawiać czoła nawet "
-				         "najpotężniejszym złym duchom. Inna legenda wspomina, że "
-				         "pekińczyki miały być owocem miłości lwa do małpki, który "
-				         "to związek został pobłogosławiony przez samego Buddę. ",
+    'biography': "Inżynier elektronik oraz doktorant specjalizujący się "
+                  "w systemach embedded – od projektowania PCB przez implementację "
+                  "firmware po testy terenowe. Doświadczenie w integracji "
+                  "czujników, programowaniu mikrokontrolerów (STM32, AVR) oraz "
+                  "przetwarzaniu sygnałów. Prowadzę badania doktoranckie "
+                  "w AstroCeNT (Polska Akademia Nauk), pracując nad precyzyjnymi "
+                  "sieciami czujników dla detektorów fal grawitacyjnych. "
+                  "Uczestniczyłem w międzynarodowych projektach w obserwatorium "
+                  "Virgo (Włochy) i ET Path Finder (Holandia). Doświadczenie "
+                  "w radarach ultrasonicznych i akwizycji danych. Pasjonuje mnie "
+                  "łączenie badań naukowych z praktycznymi zastosowaniami inżynieryjnymi.",
 };
 
 const Map<String, String> biographyStringsEn = {
-    'biography': "If you give me a job, I'll give you a paw. \n\n"
-                 "The Pekingese is a companion dog breed classified in the Japanese Spaniels and Pekingese section. "
-                 "It has a dachshund-type build and does not undergo working trials.\n\n"
-                 "Bred in Manchuria, the Pekingese was unknown outside China until the mid-19th century. "
-                 "In China, they were kept as temple dogs. According to Chinese beliefs, their small size "
-                 "helped them chase temple demons, while their brave hearts let them face powerful evil spirits.\n\n"
-                 "Another legend says Pekingese resulted from a lion and monkey's love—a union blessed by Buddha.",
+    'biography': "Electronics engineer and PhD researcher specializing in "
+                 "embedded systems, from PCB design through firmware "
+                 "implementation to field testing. Experienced in sensor"
+                 "integration, microcontroller programming (STM32, AVR), and"
+                 "signal processing. Currently conducting doctoral research at"
+                 "AstroCeNT (Polish Academy of Sciences), working on precision "
+                 "sensor networks for gravitational wave detectors. "
+                 "Contributed to international projects at Virgo Observatory "
+                 "(Italy) and ET Path Finder (Netherlands). Background in "
+                 "ultrasonic radar systems and data acquisition. Passionate "
+                 "about bridging research and practical engineering applications.",
 };

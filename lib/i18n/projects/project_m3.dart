@@ -2,8 +2,9 @@
 const Map<String, String> projectM3StringsPl = {
   'project.m3.title': 'Komora termiczna z grzaniem indukcyjnym',
   'project.m3.subtitle': 'Komora termiczna z ogrzewaniem indukcyjnym do testowania sprzętu elektronicznego (od -30 °C do +120 °C), wyposażona w rezonansowy półmostkowy stopień mocy LLC, regulację PID i interfejs użytkownika.',
-  'project.m3.image.0': '...',
-  'project.m3.image.1': '...',
+  'project.m3.image.0': 'Komora podczas testów niskotemperaturowych z próbką w środku.',
+  'project.m3.image.1': 'Zbliżenie na testowaną płytkę PCB zanurzoną w oleju.',
+  'project.m3.image.2': 'Płytka PCB z półmostkiem rezonansowym (LLC, ZVS) i układem sterującym.',
   'project.m3.description': '''
 Laboratoryjny system do kontrolowanych testów temperaturowych elektroniki (-30 °C do +120 °C)
 
@@ -37,8 +38,9 @@ Projektant systemu obejmował: mechanikę, elektronikę mocy, firmware, algorytm
 const Map<String, String> projectM3StringsEn = {
   'project.m3.title': 'Thermal Chamber with Induction Heating',
   'project.m3.subtitle': 'Thermal chamber with induction heating for electronic hardware testing (-30 °C to +120 °C), featuring resonant half-bridge LLC power stage, PID control, and user interface.',
-  'project.m3.image.0': '...',
-  'project.m3.image.1': '...',
+  'project.m3.image.0': 'Chamber during low-temperature testing with sample inside.',
+  'project.m3.image.1': 'Close-up of the tested PCB board immersed in the oil bath.',
+  'project.m3.image.2': 'PCB board with LLC resonant half-bridge (ZVS) and gate-driver circuitry.',
   'project.m3.description': '''
 Laboratory system for controlled temperature testing of electronic hardware (-30 °C to +120 °C)
 

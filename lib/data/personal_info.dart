@@ -6,8 +6,8 @@ import 'dart:convert';
 /// The email is never stored as a complete string in the compiled code.
 class PersonalInfo {
   // The name and surname are not encoded
-  static const String name = 'Lucynka'; // name
-  static const String surname = 'Klusi'; // surname
+  static const String name = 'Mateusz'; // name
+  static const String surname = 'Pietrzak'; // surname
 
   // Class for securely storing and providing contact information
   /// HOW IT WORKS:

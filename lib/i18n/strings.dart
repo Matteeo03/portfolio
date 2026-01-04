@@ -28,10 +28,9 @@ const Map<String, Map<String, String>> strings = {
     'nav.home': 'Strona główna',
     'nav.skills': 'Umiejętności',
     'nav.projects': 'Projekty',
-    'greeting': "Cześć,\nJestem Lucynka\nFlutter Developer",
+    'greeting': "Mateusz Pietrzak",
     // Biography
     ...biographyStringsPl,
-    'about_short': "Pekińczyk — pies do towarzystwa...",
     'skills_section': "Umiejętności",
     'projects_my': "Moje projekty",
     'details_button' :"Zobacz szczegóły",
@@ -68,7 +67,7 @@ const Map<String, Map<String, String>> strings = {
     'nav.home': 'Home',
     'nav.skills': 'Skills',
     'nav.projects': 'Projects',
-    'greeting': "Hi,\nI'm Lucynka\nA Flutter Developer",
+    'greeting': "Mateusz Pietrzak",
     // Biography
     ...biographyStringsEn,
     'skills_section': "Technical Skills",

@@ -4,7 +4,7 @@
 /// and ease of updates. These static constants are used for navigation
 /// and linking to social profiles, blog, and other online resources.
 class SnsLinks {
-  static const String github = "https://github.com/Matteeo03/portfolio";
+  static const String github = "https://github.com/pietrzak-mateusz/portfolio";
   static const String linkedIn = "https://";
   static const String facebook = "https://";
   static const String instagram = "https://";

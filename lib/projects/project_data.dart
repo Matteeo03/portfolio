@@ -10,20 +10,24 @@ library;
 /// Mapping of project IDs to their associated image asset paths.
 final Map<String, List<String>> projectImages = {
   'm1': [
-    'assets/projects/pekinczyk_01.jpg',
-    'assets/projects/pekinczyk_02.jpg',
+    'assets/projects/m1_1.JPG',
+    'assets/projects/m1_2.JPG',
+    'assets/projects/m1_3.JPG',
   ],
   'm2': [
-    'assets/projects/pekinczyk_food_01.jpg',
-    'assets/projects/pekinczyk_food_02.jpg',
+    'assets/projects/m2_1.JPG',
+    'assets/projects/m2_2.JPG',
+    'assets/projects/m2_3.png',
   ],
   'm3': [
-    'assets/projects/pekinczyk_training_01.jpg',
-    'assets/projects/pekinczyk_training_02.jpg',
+    'assets/projects/m3_1.JPG',
+    'assets/projects/m3_2.JPG',
+    'assets/projects/m3_3.JPG',
   ],
   't1': [
-    'assets/projects/pekinczyk_social_01.jpg',
-    'assets/projects/pekinczyk_social_02.jpg',
+    'assets/projects/t1_1.JPG',
+    'assets/projects/t1_2.JPG',
+    'assets/projects/t1_3.JPG',
   ],
 };
 
@@ -33,18 +37,22 @@ final Map<String, List<String>> projectImageCaptions = {
   'm1': [
     'project.m1.image.0',
     'project.m1.image.1',
+    'project.m1.image.2',
   ],
   'm2': [
     'project.m2.image.0',
     'project.m2.image.1',
+    'project.m2.image.2',
   ],
   'm3': [
     'project.m3.image.0',
     'project.m3.image.1',
+    'project.m3.image.2',
   ],
   't1': [
     'project.t1.image.0',
     'project.t1.image.1',
+    'project.t1.image.2',
   ],
 };
 

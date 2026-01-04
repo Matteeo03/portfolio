@@ -1,9 +1,10 @@
 
 const Map<String, String> projectM1StringsPl = {
   'project.m1.title': 'Wielowiązkowy Radar Ultradźwiękowy',
-  'project.m1.subtitle': 'Ultradźwiękowy system lokalizacji obiektów wykorzystujący technikę monoimpulsową.',
-  'project.m1.image.0': 'Prototyp systemu podczas testów laboratoryjnych',
+  'project.m1.subtitle': 'Urządzenie w trakcie testu.',
+  'project.m1.image.0': 'Pomiary dwóch celów — jednoczesne określanie odległości i położenia kątowego (azymutu).',
   'project.m1.image.1': 'Autorska płytka PCB i przetworniki ultradźwiękowe',
+  'project.m1.image.2': 'Zdjęcie urządzenia.',
   'project.m1.description': '''
 Ultradźwiękowy system lokalizacji obiektów wykorzystujący technikę monoimpulsową
 
@@ -29,8 +30,9 @@ https://apd.usos.pw.edu.pl/diplomas/46829/?_s=1
 const Map<String, String> projectM1StringsEn = {
   'project.m1.title': 'Ultrasonic Monopulse Radar',
   'project.m1.subtitle': 'Ultrasonic object localization system using monopulse technique.',
-  'project.m1.image.0': 'System prototype during laboratory tests',
-  'project.m1.image.1': 'Custom PCB and ultrasonic transducers',
+  'project.m1.image.0': 'Device during a range test.',
+  'project.m1.image.1': 'Dual-target measurement — simultaneous range and azimuth (bearing) estimation.',
+  'project.m1.image.2': 'Photo of the device.',
   'project.m1.description': '''
 Ultrasonic object localization system using monopulse technique.
 

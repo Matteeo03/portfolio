@@ -24,7 +24,7 @@ class MainDesktop extends StatelessWidget {
         ),
         child: Container(
           margin: const EdgeInsets.symmetric(horizontal: 20.0),
-          height: screenHeight / 1.2,
+          height: screenHeight / 1.8,
           constraints: const BoxConstraints(minHeight: 350.0),
           child: Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -72,7 +72,7 @@ class MainDesktop extends StatelessWidget {
               const SizedBox(width: 30),
               // Right column: Profile image with responsive width
               Image.asset(
-                "assets/Luska_transparency.webp",
+                "assets/profilowe.jpg",
                 width: (screenWidth * 0.25).clamp(300.0, 500.0),
               ),
             ],

@@ -2,8 +2,9 @@
 const Map<String, String> projectT1StringsPl = {
   'project.t1.title': 'Rozproszona sieć czujników sejsmicznych i infradźwiękowych',
   'project.t1.subtitle': 'Rozwój i wdrożenie sieci czujników sejsmicznych i infradźwiękowych monitorujących szum środowiskowy w detektorach fal grawitacyjnych. Instalacje w trzech międzynarodowych ośrodkach.',
-  'project.t1.image.0': '...',
-  'project.t1.image.1': '...',
+  'project.t1.image.0': 'Instalacja mikrofonu infradźwiękowego w ETpathfinder (Maastricht University).',
+  'project.t1.image.1': 'Montaż infradźwiękowego czujnika w kopalni Sos Enattos (Sardynia) — potencjalna lokalizacja ET.',
+  'project.t1.image.2': 'Zestaw pomiarowy: mikrofon infradźwiękowy i sejsmometr zainstalowane przy detektorze Virgo (EGO).',
   'project.t1.description': '''
 Monitorowanie szumu newtonowskiego w detektorach fal grawitacyjnych
 
@@ -33,7 +34,7 @@ Moja rola: Specjalista-technik i doktorant - montaż PCB, testy prototypów czuj
 
 Tech: [Systemy wbudowane, Czujniki sejsmiczne, Mikrofony infradźwiękowe, Akwizycja danych, Montaż PCB, LabVIEW/Python, Instrumentacja terenowa]
 
-Linki: [Publikacje]
+Linki (Publikacje):
 https://doi.org/10.1140/epjp/s13360-023-04834-0
 https://indico.ego-gw.it/event/562/contributions/5213/attachments/2731/4824/2023_MSuchenek.pdf
 https://doi.org/10.22323/1.441.0104 
@@ -44,8 +45,9 @@ https://doi.org/10.22323/1.441.0104
 const Map<String, String> projectT1StringsEn = {
   'project.t1.title': 'Distributed network of seismic and infrasound sensors',
   'project.t1.subtitle': 'Development and deployment of seismic and infrasound sensor networks monitoring environmental noise at gravitational wave detectors. Installations across three international sites.',
-  'project.t1.image.0': '...',
-  'project.t1.image.1': '...',
+  'project.t1.image.0': 'Infrasound microphone installation at ETpathfinder, Maastricht University.',
+  'project.t1.image.1': 'Infrasound sensor installation at Sos Enattos mine (Sardinia) — a candidate ET site.',
+  'project.t1.image.2': 'Our sensor kit: infrasound microphone and seismometer deployed at the Virgo (EGO) site.',
   'project.t1.description': '''
 Newtonian Noise Monitoring for Gravitational Wave Detectors
 
@@ -76,7 +78,7 @@ My role: Technical specialist and PhD researcher - PCB assembly, sensor prototyp
 
 Tech: [Embedded systems, Seismic sensors, Infrasound microphones, Data acquisition, PCB assembly, LabVIEW/Python, Field instrumentation]
 
-Links: [Publications]
+Links (Publications):
 https://doi.org/10.1140/epjp/s13360-023-04834-0
 https://indico.ego-gw.it/event/562/contributions/5213/attachments/2731/4824/2023_MSuchenek.pdf
 https://doi.org/10.22323/1.441.0104 
