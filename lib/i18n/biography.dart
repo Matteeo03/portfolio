@@ -3,7 +3,7 @@ const Map<String, String> biographyStringsPl = {
                   "- od projektowania PCB, przez implementację firmware, po testy laboratoryjne " 
                   "i\u00A0terenowe. Zajmuję się projektowaniem układów pomiarowych, programowaniem "
                   "mikrokontrolerów (STM32, AVR) oraz przetwarzaniem sygnałów. "
-                  "Posiadam doświadczenie w montażu i\u00A0testach prototypów oraz we wdrożeniach "
+                  "Posiadam doświadczenie w\u00A0montażu i\u00A0testach prototypów oraz we\u00A0wdrożeniach "
                   "rozproszonych sieci czujników w\u00A0międzynarodowych ośrodkach badawczych. "
                   "Interesują mnie projekty łączące projektowanie sprzętu i\u00A0oprogramowania systemowego.",
 };
