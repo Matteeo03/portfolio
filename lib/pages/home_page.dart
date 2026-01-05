@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:my_portfolio/constants/colors.dart';
 import 'package:my_portfolio/constants/size.dart';
-// import 'package:my_portfolio/constants/sns_links.dart';
 import 'package:my_portfolio/i18n/l_text.dart';
 import 'package:my_portfolio/widgets/drawer_mobile.dart';
 import 'package:my_portfolio/widgets/footer.dart';
@@ -12,7 +11,6 @@ import 'package:my_portfolio/widgets/main_mobile.dart';
 import 'package:my_portfolio/widgets/projects_section.dart';
 import 'package:my_portfolio/widgets/skills_desktop.dart';
 import 'package:my_portfolio/widgets/skills_mobile.dart';
-// import 'package:url_launcher/url_launcher.dart';
 
 /// Main portfolio homepage with responsive layout and navigation.
 /// 

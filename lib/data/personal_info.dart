@@ -28,8 +28,8 @@ class PersonalInfo {
   // Each part of the email is encoded separately in Base64
   // Splitting into parts further complicates automatic detection
   
-  static const String _part1 = 'bHVjeQ=='; // name
-  static const String _part2 = 'a2x1c2k='; // surname
+  static const String _part1 = 'bWF0ZXVzeg=='; // name
+  static const String _part2 = 'cGlldHJ6YWswMw=='; // surname
   static const String _part3 = 'Z21haWw='; // gmail
   static const String _part4 = 'Y29t';     // com
   
@@ -44,7 +44,7 @@ class PersonalInfo {
     String decode(String encoded) => String.fromCharCodes(base64.decode(encoded));
     
     // Assemble email from 4 decoded parts:
-    return '${decode(_part1)}${decode(_part2)}@${decode(_part3)}.${decode(_part4)}';
+    return '${decode(_part1)}.${decode(_part2)}@${decode(_part3)}.${decode(_part4)}';
   }
 }
 

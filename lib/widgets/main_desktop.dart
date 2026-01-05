@@ -72,7 +72,7 @@ class MainDesktop extends StatelessWidget {
               const SizedBox(width: 30),
               // Right column: Profile image with responsive width
               Image.asset(
-                "assets/profilowe.jpg",
+                "assets/profilowe.webp",
                 width: (screenWidth * 0.25).clamp(300.0, 500.0),
               ),
             ],

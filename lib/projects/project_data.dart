@@ -15,14 +15,14 @@ final Map<String, List<String>> projectImages = {
     'assets/projects/m1_3.JPG',
   ],
   'm2': [
-    'assets/projects/m2_1.JPG',
-    'assets/projects/m2_2.JPG',
+    'assets/projects/m2_1.jpg',
+    'assets/projects/m2_2.jpg',
     'assets/projects/m2_3.png',
   ],
   'm3': [
-    'assets/projects/m3_1.JPG',
-    'assets/projects/m3_2.JPG',
-    'assets/projects/m3_3.JPG',
+    'assets/projects/m3_1.jpg',
+    'assets/projects/m3_2.jpg',
+    'assets/projects/m3_3.jpg',
   ],
   't1': [
     'assets/projects/t1_1.JPG',

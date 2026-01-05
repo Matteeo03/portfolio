@@ -17,7 +17,7 @@ ROZWIĄZANIE
 Zaprojektowałem radar wykorzystujący trzy przetworniki piezoelektryczne (40 kHz) w\u00A0konfiguracji monoimpulsowej. Zbudowałem kompletny tor analogowy: nadajnik z\u00A0mostkiem\u00A0H (40V), demodulatory IQ z\u00A0mieszaczami AD633, filtry Sallen-Key oraz system cyfrowy na STM32F411. Synchronizacja przez sprzężone liczniki zapewniła stabilność fazy. Opracowałem algorytm wyznaczania pozycji na podstawie sygnału Δ/Σ z\u00A0funkcją pelengacyjną. Projekt umożliwia jednoczesne oszacowanie odległości i\u00A0kierunku przy użyciu niedrogiego sprzętu ultradźwiękowego.
 
 REZULTATY
-Osiągnięto zasięg 15\u00A0m dla obiektów sferycznych (balon o\u00A0śr.\u00A080\u00A0cm), rozdzielczość azymutalną 1° (obiekty bliskie) i\u00A08° (dalekie), próbkowanie 200 kHz. Opracowano prototyp systemu gotowy do integracji z\u00A0pojazdami autonomicznymi.
+Osiągnięto zasięg 15\u00A0m dla obiektów sferycznych (balon o\u00A0śr.\u00A080\u00A0cm), rozdzielczość azymutalną 1°\u00A0(obiekty bliskie) i\u00A08° (dalekie), próbkowanie 200 kHz. Opracowano prototyp systemu gotowy do integracji z\u00A0pojazdami autonomicznymi.
 
 Moja rola: pełna realizacja projektu w\u00A0zakresie hardware i\u00A0software.
 
@@ -45,7 +45,7 @@ SOLUTION
 I designed a radar using three piezoelectric transducers (40 kHz) in monopulse configuration. Built complete analog chain: H-bridge transmitter (40V), IQ demodulators with AD633 mixers, Sallen-Key filters, and STM32F411 digital system. Synchronization via coupled timers achieved phase stability. Developed position algorithm based on Δ/Σ signal with bearing function. This project enabled simultaneous distance and direction estimation using low-cost ultrasonic hardware.
 
 RESULTS
-Achieved 15\u00A0m range for spherical objects (80\u00A0cm dia. balloon), 1° azimuth resolution (near objects) and 8° (far), 200 kHz sampling. A system prototype ready for integration into autonomous vehicles has been developed.
+Achieved 15\u00A0m range for spherical objects (80\u00A0cm dia. balloon), 1° azimuth resolution (near objects) and 8° (far), 200 kHz sampling. A\u00A0system prototype ready for integration into autonomous vehicles has been developed.
 
 My role: complete hardware and software implementation.
 
