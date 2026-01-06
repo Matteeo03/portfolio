@@ -51,7 +51,7 @@ class ProjectCardWidget extends StatelessWidget {
                   LText(
                     project.titleKey,
                     style: const TextStyle(
-                      fontSize: 19,
+                      fontSize: 17,
                       fontWeight: FontWeight.bold,
                       color: CustomColor.whitePrimary,
                     ),

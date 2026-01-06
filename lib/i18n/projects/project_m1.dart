@@ -2,9 +2,9 @@
 const Map<String, String> projectM1StringsPl = {
   'project.m1.title': 'Wielowiązkowy Radar Ultradźwiękowy',
   'project.m1.subtitle': 'Ultradźwiękowy system lokalizacji obiektów wykorzystujący technikę monoimpulsową.',
-  'project.m1.image.0': 'Urządzenie w trakcie testu. Pomiar odległości od obiektu.',
-  'project.m1.image.1': 'Pomiary dwóch celów - jednoczesne określanie odległości i położenia kątowego (azymutu).',
-  'project.m1.image.2': 'Zdjęcie urządzenia.',
+  'project.m1.image.0': 'Prototyp radaru ultradźwiękowego podczas testów zasięgu (obiekt w tle: balon Ø80 cm na dystansie ~12 m)',
+  'project.m1.image.1': 'Test wykrywania wielu celów - jednoczesny pomiar odległości i azymut dwóch obiektów',
+  'project.m1.image.2': 'Kompletny system: przetworniki ultradźwiękowe, elektronika pomiarowa, mikrokontroler STM32',
   'project.m1.description': '''
 Ultradźwiękowy system lokalizacji obiektów wykorzystujący technikę monoimpulsową
 
@@ -14,7 +14,7 @@ PROBLEM
 Autonomiczne pojazdy i\u00A0systemy bezpieczeństwa wymagają tanich, dokładnych czujników do wykrywania przeszkód. Tradycyjne sonary ultradźwiękowe nie określają kierunku obiektu, a\u00A0radary elektromagnetyczne są drogie. Potrzebne było rozwiązanie łączące niski koszt z\u00A0możliwością lokalizacji (odległość + kierunek).
 
 ROZWIĄZANIE
-Zaprojektowałem radar wykorzystujący trzy przetworniki piezoelektryczne (40 kHz) w\u00A0konfiguracji monoimpulsowej. Zbudowałem kompletny tor analogowy: nadajnik z\u00A0mostkiem\u00A0H (40V), demodulatory IQ z\u00A0mieszaczami AD633, filtry Sallen-Key oraz system cyfrowy na STM32F411. Synchronizacja przez sprzężone liczniki zapewniła stabilność fazy. Opracowałem algorytm wyznaczania pozycji na podstawie sygnału Δ/Σ z\u00A0funkcją pelengacyjną. Projekt umożliwia jednoczesne oszacowanie odległości i\u00A0kierunku przy użyciu niedrogiego sprzętu ultradźwiękowego.
+Zaprojektowałem radar wykorzystujący trzy przetworniki piezoelektryczne (40\u00A0kHz) w\u00A0konfiguracji monoimpulsowej. Zbudowałem kompletny tor analogowy: nadajnik z\u00A0mostkiem\u00A0H (40\u00A0V), demodulatory IQ z\u00A0mieszaczami AD633, filtry Sallen-Key oraz system cyfrowy na STM32F411. Synchronizacja przez sprzężone liczniki zapewniła stabilność fazy. Opracowałem algorytm wyznaczania pozycji na podstawie sygnału Δ/Σ z\u00A0funkcją pelengacyjną. Projekt umożliwia jednoczesne oszacowanie odległości i\u00A0kierunku przy użyciu niedrogiego sprzętu ultradźwiękowego.
 
 REZULTATY
 Osiągnięto zasięg 15\u00A0m dla obiektów sferycznych (balon o\u00A0śr.\u00A080\u00A0cm), rozdzielczość azymutalną 1°\u00A0(obiekty bliskie) i\u00A08° (dalekie), próbkowanie 200 kHz. Opracowano prototyp systemu gotowy do integracji z\u00A0pojazdami autonomicznymi.
@@ -30,9 +30,9 @@ https://apd.usos.pw.edu.pl/diplomas/46829/?_s=1
 const Map<String, String> projectM1StringsEn = {
   'project.m1.title': 'Ultrasonic Monopulse Radar',
   'project.m1.subtitle': 'Ultrasonic object localization system using monopulse technique.',
-  'project.m1.image.0': 'Device during a range test.',
-  'project.m1.image.1': 'Dual-target measurement - simultaneous range and azimuth (bearing) estimation.',
-  'project.m1.image.2': 'Photo of the device.',
+  'project.m1.image.0': 'Ultrasonic radar prototype during range testing (target: Ø80 cm balloon at ~12 m distance)',
+  'project.m1.image.1': 'Multi-target detection test - simultaneous range and azimuth measurement of two objects',
+  'project.m1.image.2': 'Complete system: ultrasonic transducers, analog front-end, STM32 microcontroller',
   'project.m1.description': '''
 Ultrasonic object localization system using monopulse technique.
 

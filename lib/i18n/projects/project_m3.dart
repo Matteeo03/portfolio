@@ -2,34 +2,34 @@
 const Map<String, String> projectM3StringsPl = {
   'project.m3.title': 'Komora termiczna z grzaniem indukcyjnym',
   'project.m3.subtitle': 'Komora termiczna z ogrzewaniem indukcyjnym do testowania sprzętu elektronicznego (od -30 °C do +120 °C), wyposażona w rezonansowy półmostkowy stopień mocy LLC, regulację PID i interfejs użytkownika.',
-  'project.m3.image.0': 'Komora podczas testów niskotemperaturowych z próbką w środku.',
-  'project.m3.image.1': 'Zbliżenie na testowaną płytkę PCB zanurzoną w oleju.',
-  'project.m3.image.2': 'Płytka PCB z półmostkiem rezonansowym (LLC, ZVS) i układem sterującym.',
+  'project.m3.image.0': 'Komora podczas testu niskotemperaturowego - próbka zanurzona w oleju parafinowym, widoczne chłodzące po bokach',
+  'project.m3.image.1': 'Testowany układ elektroniczny wewnątrz komory (po spuszczeniu oleju)',
+  'project.m3.image.2': 'Moduł sterujący: sterownik pół-mostka LLC (IGBT + FAN7382N), ESP8285, STM32F103',
   'project.m3.description': '''
 Laboratoryjny system do kontrolowanych testów temperaturowych elektroniki (-30 °C do +120 °C)
 
 Kompaktowa komora termiczna umożliwiająca realizację powtarzalnych przebiegów temperaturowych od -30 °C do +120 °C z\u00A0kontrolowaną szybkością zmian 0,5 °C/min.
 
 PROBLEM
-Wiele badań laboratoryjnych i\u00A0testów niezawodności wymaga jednorodnego, stabilnego środowiska temperaturowego w szerokim zakresie temperatur. Motywacją projektu było stworzenie platformy testowej umożliwiającej generowanie powtarzalnych przebiegów temperaturowych dla elektroniki i\u00A0precyzyjnych pomiarów.
+Wiele badań laboratoryjnych i\u00A0testów niezawodności wymaga jednorodnego, stabilnego środowiska temperaturowego w\u00A0szerokim zakresie temperatur. Motywacją projektu było stworzenie platformy testowej umożliwiającej generowanie powtarzalnych przebiegów temperaturowych dla elektroniki i\u00A0precyzyjnych pomiarów.
 
 ROZWIĄZANIE
-Zaprojektowałem i\u00A0zbudowałem kompletną komorę termiczną łączącą wymianę ciepła przez zanurzenie w\u00A0oleju z\u00A0grzaniem indukcyjnym oraz aktywnym chłodzeniem. Badany układ umieszczany jest w\u00A0stalowym, sześciennym zbiorniku (wyspawanym przeze mnie), wypełnionym olejem parafinowym. Olej zapewnia bezpieczną elektrycznie pracę oraz bardzo jednorodną wymianę ciepła w \u00A0całym zakresie temperatur.
+Zaprojektowałem i\u00A0zbudowałem kompletną komorę termiczną łączącą wymianę ciepła przez zanurzenie w\u00A0oleju z\u00A0grzaniem indukcyjnym oraz aktywnym chłodzeniem. Badany układ umieszczany jest w\u00A0stalowym, sześciennym zbiorniku (wyspawanym przeze mnie), wypełnionym olejem parafinowym. Olej zapewnia bezpieczną elektrycznie pracę oraz bardzo jednorodną wymianę ciepła w\u00A0całym zakresie temperatur.
 
 Uzyskanie temperatur ujemnych zrealizowano przy użyciu przenośnej elektrycznej zamrażarki do rur. Do zbiornika dospawano dedykowane uchwyty umożliwiające bezpośrednie mocowanie uchwytów chłodzących, co zapewnia efektywne odprowadzanie ciepła przez ścianki naczynia i\u00A0stabilne chłodzenie do -30 °C.
 
-Nagrzewanie realizowane jest indukcyjnie - stalowy zbiornik pełni rolę elementu grzejnego, w którym indukowane są prądy wirowe. Energia przekazywana jest z\u00A0cewki pochodzącej z\u00A0pola grzejnego kuchenki indukcyjnej i\u00A0równomiernie rozprowadzana do oleju oraz badanego układu.
+Nagrzewanie realizowane jest indukcyjnie - stalowy zbiornik pełni rolę elementu grzejnego, w\u00A0którym indukowane są prądy wirowe. Energia przekazywana jest z\u00A0cewki pochodzącej z\u00A0pola grzejnego kuchenki indukcyjnej i\u00A0równomiernie rozprowadzana do oleju oraz badanego układu.
 
-Cewka zasilana jest przez rezonansową przetwornicę pół-mostkową LLC z tranzystorami IGBT (FGHL40T65MQDT). Regulacja mocy odbywa się poprzez zmianę częstotliwości pracy względem punktu rezonansowego, z\u00A0zachowaniem pracy w trybie ZVS. Tranzystory sterowane są przez układ FAN7382N z\u00A0kontrolowanym czasem martwym.
+Cewka zasilana jest przez rezonansową przetwornicę pół-mostkową LLC z\u00A0tranzystorami IGBT (FGHL40T65MQDT). Regulacja mocy odbywa się poprzez zmianę częstotliwości pracy względem punktu rezonansowego, z\u00A0zachowaniem pracy w trybie ZVS. Tranzystory sterowane są przez układ FAN7382N z\u00A0kontrolowanym czasem martwym.
 
 Sterowanie systemem, generacja PWM oraz regulacja temperatury zostały zaimplementowane na mikrokontrolerze STM32F103. Pomiar temperatury realizują czujniki DS18B20, a\u00A0regulator PID umożliwia realizację liniowych ramp temperaturowych. Prosty interfejs WWW uruchomiony na ESP8285 pozwala na ręczne sterowanie, a\u00A0system może być również w\u00A0pełni automatyzowany z\u00A0użyciem skryptów Python.
 
-Zabezpieczenia realizowane są przez polimerowe bezpieczniki nadprądowe oraz bezpiecznik termiczny BF121, który odcina zasilanie przy temperaturach powyżej 121°C.
+Zabezpieczenia realizowane są przez polimerowe bezpieczniki nadprądowe oraz bezpiecznik termiczny BF121, który odcina zasilanie przy temperaturach powyżej 121\u00A0°C.
 
 Komora została wykorzystana m.in. do badań temperaturowych rezonatorów kwarcowych i\u00A0analizy stabilności częstotliwości.
 
 REZULTATY
-Projektant systemu obejmował: mechanikę, elektronikę mocy, firmware, algorytmy sterowania, interfejs użytkownika, automatyzację i\u00A0walidację.
+Projekt systemu obejmował: mechanikę, elektronikę mocy, firmware, algorytmy sterowania, interfejs użytkownika, automatyzację i\u00A0walidację.
 - Zakres temperatur: -30 °C do +120 °C
 - Szybkość zmian temperatury: 0,5 °C/min
 - Pełny cykl -30 °C do +120 °C: ~5 godzin
@@ -40,9 +40,9 @@ Projektant systemu obejmował: mechanikę, elektronikę mocy, firmware, algorytm
 const Map<String, String> projectM3StringsEn = {
   'project.m3.title': 'Thermal Chamber with Induction Heating',
   'project.m3.subtitle': 'Thermal chamber with induction heating for electronic hardware testing (-30 °C to +120 °C), featuring resonant half-bridge LLC power stage, PID control, and user interface.',
-  'project.m3.image.0': 'Chamber during low-temperature testing with sample inside.',
-  'project.m3.image.1': 'Close-up of the tested PCB board immersed in the oil bath.',
-  'project.m3.image.2': 'PCB board with LLC resonant half-bridge (ZVS) and gate-driver circuitry.',
+  'project.m3.image.0': 'Chamber during low-temperature test - sample immersed in paraffin oil, cooling visible on sides',
+  'project.m3.image.1': 'Electronic system under test inside chamber (after draining oil)',
+  'project.m3.image.2': 'Control module: LLC half-bridge driver (IGBT + FAN7382N), ESP8285, STM32F103',
   'project.m3.description': '''
 Laboratory system for controlled temperature testing of electronic hardware (-30 °C to +120 °C)
 

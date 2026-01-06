@@ -17,7 +17,7 @@ final Map<String, List<String>> projectImages = {
   'm2': [
     'assets/projects/m2_1.jpg',
     'assets/projects/m2_2.jpg',
-    'assets/projects/m2_3.png',
+    'assets/projects/m2_3.jpg',
   ],
   'm3': [
     'assets/projects/m3_1.jpg',
@@ -58,7 +58,7 @@ final Map<String, List<String>> projectImageCaptions = {
 
 /// Mapping of project IDs to their technology stacks.
 final Map<String, List<String>> projectTechnologies = {
-  'm1': ['Embedded Systems', 'Ultrasonic Sensors', 'STM32F411RE', 'Analog-digital systems', 'IQ Demodulation', 'Monopulse Technique', 'C/C++', 'MATLAB', 'Altium Designer', 'PCB', 'UART', 'DMA'],
+  'm1': ['Embedded Systems', 'Ultrasonic Sensors', 'STM32F411RE', 'Analog-digital systems', 'IQ Demodulation', 'Monopulse Technique', 'C/C++', 'MATLAB', 'Altium Designer', 'PCB', 'UART', 'DMA', '3D printing'],
   'm2': ['Embedded Systems', 'Ultrasonic Sensors', 'ATXmega16A4U', 'Analog-digital systems', 'Real-Time Systems', 'FAT32', 'C', 'MATLAB', 'Altium Designer', 'PCB', 'SPI', 'UART', 'DMA'],
   'm3': ['Embedded Systems', 'STM32F103', 'Induction Heating', 'LLC Resonant Converter', 'IGBT', 'FAN7382N', 'PID Control', 'ESP8285', 'DS18B20', 'Python', 'Altium Designer', 'PCB'],
   't1': ['Distributed sensor networks', 'Seismic sensors', 'Infrasound microphones / Infrasound sensors', 'Data acquisition', 'Nanometrics Centaur', 'STM32', 'Altium Designer', 'Python', 'C/C++', 'MATLAB', 'Raspberry Pi'],

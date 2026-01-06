@@ -2,16 +2,16 @@
 const Map<String, String> projectM2StringsPl = {
   'project.m2.title': 'Anemometr Ultradźwiękowy',
   'project.m2.subtitle': 'Dwuosiowy ultradźwiękowy czujnik prędkości i kierunku wiatru z pomiarem przesunięcia fazowego oraz rejestracją danych.',
-  'project.m2.image.0': 'Testy w prowizorycznym tunelu aerodynamicznym.',
-  'project.m2.image.1': 'Dwie prostopadłe osie czujników (dual-axis) do pomiaru kierunku wiatru.',
-  'project.m2.image.2': 'Wykres wyników: czerwona linia — prędkość wiatru, niebieska linia — kierunek wiatru.',
+  'project.m2.image.0': 'Kalibracja w tunelu aerodynamicznym - porównanie z anemometrem mechanicznym stacji pogodowej',
+  'project.m2.image.1': 'Dwuosiowa konfiguracja przetworników ultradźwiękowych (40 kHz) do pomiaru kierunku i prędkości wiatru',
+  'project.m2.image.2': 'Testy terenowe - pomiar prędkości wiatru pozornego z samochodu (weryfikacja zakresu większych prędkości wiatru)',
   'project.m2.description': '''
 Dwuosiowy anemometr ultradźwiękowy wykorzystujący pomiar przesunięcia fazowego.
 
-Urządzenie mierzy prędkość wiatru w\u00A0zakresie 0-20\u00A0m/s z\u00A0rozdzielczością 0,1\u00A0m/s oraz dokładnością kierunku ±1°.
+Urządzenie mierzy prędkość wiatru w\u00A0zakresie 0-20\u00A0m/s z\u00A0rozdzielczością 0,1\u00A0m/s oraz dokładnością kierunku\u00A0±1°.
 
 PROBLEM
-Mechaniczne anemometry charakteryzują się dużą bezwładnością, niską czułością na nagłe podmuchy oraz podatnością na zużycie mechaniczne. Wymaga to długiego czasu uśredniania i\u00A0prowadzi do błędów pomiarowych. Komercyjne ultradźwiękowe czujniki wiatru są kosztowne, co ogranicza ich dostępność. Potrzebne było tanie i wydajne rozwiązanie.
+Mechaniczne anemometry charakteryzują się dużą bezwładnością, niską czułością na nagłe podmuchy oraz podatnością na zużycie mechaniczne. Wymaga to długiego czasu uśredniania i\u00A0prowadzi do błędów pomiarowych. Komercyjne ultradźwiękowe czujniki wiatru są kosztowne, co ogranicza ich dostępność. Potrzebne było tanie i\u00A0wydajne rozwiązanie.
 
 ROZWIĄZANIE
 Zaprojektowałem dwuosiowy anemometr ultradźwiękowy oparty na pomiarze przesunięcia fazowego sygnałów 40\u00A0kHz pomiędzy nadajnikiem a\u00A0odbiornikiem piezoelektrycznym. Zaimplementowałem enkoder kwadraturowy w\u00A0celu rozszerzenia zakresu pomiarowego oraz system zdarzeń sterowany przez DMA w\u00A0mikrokontrolerze ATxmega do próbkowania w\u00A0czasie rzeczywistym. 
@@ -19,7 +19,7 @@ Część analogowa obejmuje wzmacniacz transimpedancyjny, filtry pasmowe oraz de
 System zapewnia szybką reakcję na podmuchy oraz dokładny pomiar kierunku przy użyciu tanich przetworników piezoelektrycznych.
 
 REZULTATY
-Osiągnięto zakres pomiarowy 0-20\u00A0m/s z\u00A0błędem <8% względem referencyjnej stacji pogodowej, rozdzielczość kierunku 1°\u00A0oraz możliwość ciągłego zapisu danych na kartę SD.
+Osiągnięto zakres pomiarowy 0-20\u00A0m/s z\u00A0błędem <8%\u00A0względem referencyjnej stacji pogodowej, rozdzielczość kierunku 1°\u00A0oraz możliwość ciągłego zapisu danych na kartę SD.
 Czas reakcji i\u00A0czułość na podmuchy znacząco przewyższają typowe anemometry mechaniczne.
 
 Moja rola: pełna realizacja projektu w\u00A0zakresie hardware i\u00A0software.
@@ -33,9 +33,9 @@ https://apd.usos.pw.edu.pl/diplomas/22611/?_s=1
 const Map<String, String> projectM2StringsEn = {
   'project.m2.title': 'Ultrasonic Anemometer',
   'project.m2.subtitle': 'Two-axis ultrasonic wind speed and direction sensor with phase-shift measurement and data logging.',
-  'project.m2.image.0': 'Tests in a makeshift wind tunnel.',
-  'project.m2.image.1': 'Two orthogonal sensor axes (dual-axis) used to measure wind direction.',
-  'project.m2.image.2': 'Results plot: red — wind speed, blue — wind direction angle.',
+  'project.m2.image.0': 'Calibration in wind tunnel setup - comparison with reference mechanical anemometer',
+  'project.m2.image.1': 'Dual-axis configuration of ultrasonic transducers (40 kHz) for wind direction and velocity measurement',
+  'project.m2.image.2': 'Field tests - measurement of apparent wind speed from a moving car (verification of higher wind speed range)',
   'project.m2.description': '''
 Two-axis ultrasonic anemometer using phase-shift measurement.
 
