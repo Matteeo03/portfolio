@@ -19,15 +19,15 @@ Designed to present professional experience and projects across desktop and mobi
 ## Preview
 
 ### Desktop
-![Desktop view](assets/screenshots/desktop.png)
+![Desktop view](assets/screenshots/webpage_desktop_view.jpg)
 > *Desktop layout with navigation header, biography section, skills overview and project cards.*
 
 ### Mobile
-![Mobile view](assets/screenshots/mobile.png)
+![Mobile view](assets/screenshots/webpage_mobile_view.jpg)
 > *Mobile-optimized layout with collapsible hamburger menu and stacked content sections.*
 
 ### Project detail page
-![Project details](assets/screenshots/project-detail.png)
+![Project details](assets/screenshots/project_detail_view.jpg)
 > *Dedicated project page displaying detailed description, technology stack and image gallery.*
 
 ## Features
